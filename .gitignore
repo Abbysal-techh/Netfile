@@ -1,0 +1,17 @@
+node_modules/
+package-lock.json
+backup/
+backup-removed-assets/
+backup-unused-media/
+.vscode/
+lighthouse-*.json
+*.downloaded
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.docx
+*.xlsx
+*.pdf
+*.log
+*.tmp
