@@ -159,7 +159,7 @@
 .premium-site .premium-product-card {
     display: flex;
     height: 100%;
-    min-height: 29.5rem;
+    min-height: 22rem;
     flex-direction: column;
 }
 
@@ -168,7 +168,7 @@
 }
 
 .premium-site .premium-product-card > div:first-child > div.relative {
-    height: 12rem;
+    height: 8rem;
     aspect-ratio: 4 / 3;
 }
 
@@ -186,7 +186,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 0;
     padding-top: 1rem;
     border-top: 1px solid rgba(240, 236, 221, 0.1);
 }
@@ -792,7 +792,7 @@
 
 .premium-site .premium-product-card {
     height: 100%;
-    min-height: 31rem;
+    min-height: 22rem;
 }
 
 .premium-site :focus-visible {
