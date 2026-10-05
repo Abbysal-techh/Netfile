@@ -39,15 +39,24 @@
         card.classList.add("premium-product-card");
         actions.classList.add("premium-product-actions");
 
-        const details = actions.querySelector("button[onclick^='showProductDetails']");
-        if (details) {
-            details.classList.add("btn-ghost");
-            details.textContent = "İncele";
-        }
+        const detailsButton = actions.querySelector("button[onclick^='showProductDetails']");
+        const productName = quickAdd.getAttribute("onclick")?.match(/quickAdd\('([^']+)'/)?.[1];
+        const productPages = {
+            "Balkon Güvenlik Filesi": "balkon-filesi.html",
+            "Kedi & Evcil Hayvan Filesi": "kedi-filesi.html",
+            "İnşaat Güvenlik Filesi": "insaat-filesi.html",
+            "Kuş Engelleme Filesi": "kus-filesi.html",
+            "Okul & Merdiven Boşluğu Filesi": "merdiven-boslugu-filesi.html"
+        };
+        const details = document.createElement("a");
+        details.href = productPages[productName] || "urunlerimiz.html";
+        details.className = "btn-ghost";
+        details.innerHTML = 'İncele <span aria-hidden="true">→</span>';
+        detailsButton?.replaceWith(details);
 
         quickAdd.classList.add("premium-add-icon");
-        quickAdd.setAttribute("aria-label", "Teklif listesine ekle");
-        quickAdd.setAttribute("title", "Teklif listesine ekle");
+        quickAdd.setAttribute("aria-label", "Ürünü teklife ekle");
+        quickAdd.setAttribute("title", "Ürünü teklife ekle");
         quickAdd.innerHTML = '<span aria-hidden="true">+</span>';
         card.appendChild(quickAdd);
 

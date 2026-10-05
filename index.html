@@ -66,7 +66,7 @@
     <script defer src="https://unpkg.com/lucide@latest"></script>
     
     <!-- Ortak JavaScript -->
-    <script src="app.min.js"></script>
+    <script src="app.min.js?v=20261005-card-fix4"></script>
 <style>
         h1, h2, h3, h4, h5, h6, button, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
         .slider-img { transition: opacity 0.7s ease-in-out; }
@@ -173,7 +173,7 @@
         window.scrollTo(0, 0);
     </script>
     <link rel="stylesheet" href="assets/premium.css?v=20261005-v2e">
-    <script defer src="assets/premium.js?v=20261005-v2d"></script>
+    <script defer src="assets/premium.js?v=20261005-card-fix3"></script>
 </head>
 <body class="min-h-screen bg-moonlight text-oxford-blue font-sans dark:bg-dark-bg dark:text-moonlight flex flex-col pt-16 overflow-x-hidden premium-site">
 
@@ -326,7 +326,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('balkon')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Balkon Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('Balkon Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Ürün 2 -->
@@ -342,7 +342,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('kedi')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Kedi & Evcil Hayvan Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('Kedi & Evcil Hayvan Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Ürün 3 -->
@@ -358,7 +358,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('insaat')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('İnşaat Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('İnşaat Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Ürün 4 -->
@@ -374,7 +374,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('rafkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Raf Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('Raf Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Ürün 5 -->
@@ -390,7 +390,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('havuzkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Havuz Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('Havuz Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
             </div>
@@ -429,7 +429,7 @@
                     </div>
                     <div class="mt-6 flex gap-3">
                         <button onclick="closeProductModal()" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-bg dark:border-dark-border dark:text-moonlight">Kapat</button>
-                        <button id="modal-add-to-cart" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button id="modal-add-to-cart" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Al</button>
                     </div>
                 </div>
             </div>

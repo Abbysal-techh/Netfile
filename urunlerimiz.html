@@ -42,7 +42,7 @@
     <script defer src="https://unpkg.com/lucide@latest"></script>
     
     <!-- Ortak JavaScript -->
-    <script src="app.min.js"></script>
+    <script src="app.min.js?v=20261005-card-fix4"></script>
 
 <style>
         h1, h2, h3, h4, h5, h6, button, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
@@ -143,7 +143,7 @@
         window.scrollTo(0, 0);
     </script>
     <link rel="stylesheet" href="assets/premium.css?v=20261005-v2e">
-    <script defer src="assets/premium.js?v=20261005-v2d"></script>
+    <script defer src="assets/premium.js?v=20261005-card-fix3"></script>
 </head>
 <body class="min-h-screen bg-moonlight text-oxford-blue font-sans dark:bg-dark-bg dark:text-moonlight flex flex-col pt-16 overflow-x-hidden premium-site">
 
@@ -238,7 +238,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('balkon')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:bord border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Balkon Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('Balkon Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Kart 2 -->
@@ -254,7 +254,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('kedi')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Kedi & Evcil Hayvan Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('Kedi & Evcil Hayvan Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Kart 3 -->
@@ -270,7 +270,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('insaat')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('İnşaat Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('İnşaat Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Kart 4 -->
@@ -286,7 +286,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('kus')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Kuş Engelleme Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('Kuş Engelleme Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Kart 5 -->
@@ -302,7 +302,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('okul')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Okul & Merdiven Boşluğu Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('Okul & Merdiven Boşluğu Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Kart 6 -->
@@ -318,7 +318,7 @@
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
                         <button onclick="showProductDetails('spor')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Spor & Halı Saha Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button onclick="quickAdd('Spor & Halı Saha Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
                     </div>
                 </div>
             </div>
@@ -331,7 +331,7 @@
                         <h3 class="text-2xl font-bold font-heading dark:text-moonlight">Gölgelik Filesi</h3>
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Güneş ışığını azaltan, dış alanlarda konfor sağlayan dayanıklı gölgelik fileleri.</p>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('golgelik')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Gölgelik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button></div>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('golgelik')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Gölgelik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button></div>
                 </div>
                 <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
                     <div>
@@ -339,7 +339,7 @@
                         <h3 class="text-2xl font-bold font-heading dark:text-moonlight">Hastane Filesi</h3>
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Hastane ve sağlık alanlarına uygun, hijyenik ve güvenli file çözümleri.</p>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('hastane')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Hastane Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button></div>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('hastane')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Hastane Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button></div>
                 </div>
                 <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
                     <div>
@@ -347,31 +347,31 @@
                         <h3 class="text-2xl font-bold font-heading dark:text-moonlight">Sera Filesi</h3>
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Sera alanlarında bitkileri korumaya ve hava akışını düzenlemeye yardımcı fileler.</p>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('sera')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Sera Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button></div>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('sera')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Sera Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button></div>
                 </div>
                 <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
                     <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/cimcit.webp" srcset="images/cimcit-480.webp 480w, images/cimcit-768.webp 768w, images/cimcit.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Çim Çit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading dark:text-moonlight">Çim Çit</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Bahçe ve çevre düzenlemelerinde doğal görünüm sağlayan dayanıklı çim çit.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('cimcit')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Çim Çit')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button></div>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('cimcit')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Çim Çit')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button></div>
                 </div>
                 <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
                     <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/voleybol.webp" srcset="images/voleybol-480.webp 480w, images/voleybol-768.webp 768w, images/voleybol.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Voleybol Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading dark:text-moonlight">Voleybol Filesi</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Voleybol sahaları için ölçülü, sağlam ve uzun ömürlü spor filesi.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('voleybol')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Voleybol Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button></div>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('voleybol')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Voleybol Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button></div>
                 </div>
                 <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
                     <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/kres.webp" srcset="images/kres-480.webp 480w, images/kres-768.webp 768w, images/kres.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Kreş Tırmanma Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading dark:text-moonlight">Kreş Tırmanma Filesi</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Kreş ve oyun alanlarında güvenli tırmanma aktiviteleri için dayanıklı fileler.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('kres')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Kreş Tırmanma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button></div>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('kres')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Kreş Tırmanma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button></div>
                 </div>
                 <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
         <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/fabrika.webp" srcset="images/fabrika-480.webp 480w, images/fabrika-768.webp 768w, images/fabrika.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Fabrika Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading dark:text-moonlight">Fabrika Filesi</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Fabrika ve endüstriyel tesislerde güvenlik ve alan ayırma için profesyonel fileler.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('fabrika')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Fabrika Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button></div>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('fabrika')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Fabrika Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button></div>
                 </div>
                 <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
                     <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/rafkoruma.webp" srcset="images/rafkoruma-480.webp 480w, images/rafkoruma-768.webp 768w, images/rafkoruma.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Raf Koruma Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading dark:text-moonlight">Raf Koruma Filesi</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Depo ve raf sistemlerinde ürün düşmesini engelleyen, dayanıklı koruma fileleri.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('rafkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Raf Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button></div>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('rafkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Raf Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button></div>
                 </div>
                 <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
                     <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/havuzkoruma.webp" srcset="images/havuzkoruma-480.webp 480w, images/havuzkoruma-768.webp 768w, images/havuzkoruma.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Havuz Koruma Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading dark:text-moonlight">Havuz Koruma Filesi</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Havuz güvenliği için çocuk ve evcil hayvan koruması sağlayan dayanıklı fileler.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('havuzkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Havuz Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button></div>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('havuzkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button><button onclick="quickAdd('Havuz Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button></div>
                 </div>
             </div>
         </section>
@@ -397,7 +397,7 @@
                     </div>
                     <div class="mt-6 flex gap-3">
                         <button onclick="closeProductModal()" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-bg dark:border-dark-border dark:text-moonlight">Kapat</button>
-                        <button id="modal-add-to-cart" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>
+                        <button id="modal-add-to-cart" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Al</button>
                     </div>
                 </div>
             </div>

@@ -85,47 +85,39 @@ function initConversionTracking() {
 function initHomepageProducts() {
     const e = document.querySelector("#homepage-products");
     if (!e || "true" === e.dataset.expanded) return;
-    [ [ "kus", "Kuş Engelleme Filesi", "Geniş alanların, fabrika çatılarının ve balkonların kuş istilasından korunması için ince gözenekli ağlar.", "images/kusfilesi.webp" ], [ "spor", "Spor & Halı Saha Filesi", "Halı saha tavan ağları, kale arkası koruma fileleri ve tenis kortu çevreleme ağları.", "images/sahafilesi.webp" ], [ "okul", "Okul & Merdiven Boşluğu Filesi", "Kolejler, devlet okulları ve anaokulları için merdiven boşluklarını kapatan emniyet sistemleri.", "images/merdiven.webp" ], [ "golgelik", "Gölgelik Filesi", "Güneş ışığını azaltan, dış alanlarda konfor sağlayan dayanıklı gölgelik fileleri.", "images/golgelikyeni.webp" ], [ "hastane", "Hastane Filesi", "Hastane ve sağlık alanlarına uygun, hijyenik ve güvenli file çözümleri.", "images/hastane.webp" ], [ "sera", "Sera Filesi", "Sera alanlarında bitkileri korumaya ve hava akışını düzenlemeye yardımcı fileler.", "images/serra.webp" ], [ "cimcit", "Çim Çit", "Bahçe ve çevre düzenlemelerinde doğal görünüm sağlayan dayanıklı çim çit.", "images/cimcit.webp" ], [ "voleybol", "Voleybol Filesi", "Voleybol sahaları için ölçülü, sağlam ve uzun ömürlü spor filesi.", "images/voleybol.webp" ], [ "kres", "Kreş Tırmanma Filesi", "Kreş ve oyun alanlarında güvenli tırmanma aktiviteleri için dayanıklı fileler.", "images/kres.webp" ], [ "fabrika", "Fabrika Filesi", "Fabrika ve endüstriyel tesislerde güvenlik ve alan ayırma için profesyonel fileler.", "images/fabrika.webp" ] ].forEach(([t, a, n, i]) => {
+        [ [ "kus", "Kuş Engelleme Filesi", "Geniş alanların, fabrika çatılarının ve balkonların kuş istilasından korunması için ince gözenekli ağlar.", "images/kusfilesi.webp" ], [ "spor", "Spor & Halı Saha Filesi", "Halı saha tavan ağları, kale arkası koruma fileleri ve tenis kortu çevreleme ağları.", "images/sahafilesi.webp" ], [ "okul", "Okul & Merdiven Boşluğu Filesi", "Kolejler, devlet okulları ve anaokulları için merdiven boşluklarını kapatan emniyet sistemleri.", "images/merdiven.webp" ], [ "golgelik", "Gölgelik Filesi", "Güneş ışığını azaltan, dış alanlarda konfor sağlayan dayanıklı gölgelik fileleri.", "images/golgelikyeni.webp" ], [ "hastane", "Hastane Filesi", "Hastane ve sağlık alanlarına uygun, hijyenik ve güvenli file çözümleri.", "images/hastane.webp" ], [ "sera", "Sera Filesi", "Sera alanlarında bitkileri korumaya ve hava akışını düzenlemeye yardımcı fileler.", "images/serra.webp" ], [ "cimcit", "Çim Çit", "Bahçe ve çevre düzenlemelerinde doğal görünüm sağlayan dayanıklı çim çit.", "images/cimcit.webp" ], [ "voleybol", "Voleybol Filesi", "Voleybol sahaları için ölçülü, sağlam ve uzun ömürlü spor filesi.", "images/voleybol.webp" ], [ "kres", "Kreş Tırmanma Filesi", "Kreş ve oyun alanlarında güvenli tırmanma aktiviteleri için dayanıklı fileler.", "images/kres.webp" ], [ "fabrika", "Fabrika Filesi", "Fabrika ve endüstriyel tesislerde güvenlik ve alan ayırma için profesyonel fileler.", "images/fabrika.webp" ] ].forEach(([t, a, n, i]) => {
         const l = document.createElement("div");
-        l.className = "rounded-3xl border border-steel/20 bg-white/60 p-6 flex flex-col justify-between shadow-sm dark:bg-dark-card dark:border-dark-border mobile-action-card";
+            l.className = "premium-card premium-product-card rounded-2xl border border-steel/20 bg-white/60 p-6 shadow-sm dark:bg-dark-card dark:border-dark-border";
         const r = escapeHtml(a), o = escapeHtml(n), s = escapeHtml(i);
-        l.innerHTML = `\n            <div>\n                <div class="w-full h-44 rounded-2xl mb-4 overflow-hidden relative group">\n                    <img loading="lazy" decoding="async" src="${s}" srcset="${buildResponsiveSrcset(s)}" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="${r}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">\n                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>\n                </div>\n                <h3 class="text-2xl font-bold font-heading text-oxford-blue dark:text-moonlight">${r}</h3>\n                <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">${o}</p>\n            </div>\n            <div class="mobile-action-group flex flex-nowrap gap-2 mt-3 sm:flex-row">\n                <button onclick="showProductDetails('${t}')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>\n                <button onclick="quickAdd('${r}')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Listesine Ekle</button>\n            </div>\n        `, 
+        l.innerHTML = `\n            <div>\n                <div class="w-full h-44 rounded-2xl mb-4 overflow-hidden relative group">\n                    <img loading="lazy" decoding="async" src="${s}" srcset="${buildResponsiveSrcset(s)}" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="${r}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">\n                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>\n                </div>\n                <h3 class="text-2xl font-bold font-heading text-oxford-blue dark:text-moonlight">${r}</h3>\n                <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">${o}</p>\n            </div>\n            <div class="mobile-action-group flex flex-nowrap gap-2 mt-3 sm:flex-row">\n                <button onclick="showProductDetails('${t}')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>\n                <button onclick="quickAdd('${r}')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>\n            </div>\n        `,
+        (() => {
+        const actions = l.querySelector(".mobile-action-group");
+        const detailsButton = actions?.querySelector("button[onclick^='showProductDetails']");
+        const quickAdd = actions?.querySelector("button[onclick^='quickAdd']");
+        if (actions && detailsButton && quickAdd) {
+            actions.className = "premium-product-actions";
+            const productPages = { kus: "kus-filesi.html", okul: "merdiven-boslugu-filesi.html" };
+            const details = document.createElement("a");
+            details.href = productPages[t] || "urunlerimiz.html";
+            details.className = "btn-ghost";
+            details.innerHTML = 'İncele <span aria-hidden="true">→</span>';
+
+            const offer = document.createElement("a");
+            offer.href = "teklif.html";
+            offer.className = "btn-primary";
+            offer.textContent = "Teklif Al";
+            actions.replaceChildren(details, offer);
+
+            quickAdd.className = "premium-add-icon";
+            quickAdd.type = "button";
+            quickAdd.setAttribute("aria-label", "Ürünü teklife ekle");
+            quickAdd.title = "Ürünü teklife ekle";
+            quickAdd.innerHTML = '<span aria-hidden="true">+</span>';
+            l.appendChild(quickAdd);
+        }
+        })(),
         e.appendChild(l);
     }), e.dataset.expanded = "true", translatableLeafNodesCache = null;
-}
-
-function initDirectOfferButtons() {
-    document.querySelectorAll('main button[onclick*="quickAdd"]').forEach(e => {
-        const t = e.closest(".rounded-3xl");
-        if (!t || t.querySelector(".direct-offer-button")) return;
-        const a = e.getAttribute("onclick")?.match(/quickAdd\('([^']+)'/);
-        if (!a) return;
-        const n = document.createElement("a");
-        n.href = "#", n.className = "direct-offer-button flex-1 rounded-full py-2.5 text-center text-sm font-semibold text-white transition", 
-        n.style.backgroundColor = "#128C4A", n.style.color = "#ffffff", n.textContent = "Teklif Al", 
-        n.addEventListener("mouseenter", () => n.style.backgroundColor = "#128C4A"), n.addEventListener("mouseleave", () => n.style.backgroundColor = "#128C4A"), 
-        n.addEventListener("click", e => {
-            e.preventDefault(), openWhatsApp(a[1]);
-        }), e.parentElement.append(n);
-    });
-}
-
-function initProductButtonSizing() {
-    if (document.querySelectorAll('main button[onclick*="showProductDetails"], main button[onclick*="quickAdd"], main .direct-offer-button, #modal-add-to-cart').forEach(e => {
-        const t = e.parentElement;
-        t?.closest(".rounded-3xl")?.classList.add("mobile-action-card"), t?.classList.remove("gap-3", "mt-6", "flex-col"), 
-        t?.classList.add("mobile-action-group", "flex-row", "flex-nowrap", "gap-2", "mt-3"), 
-        e.classList.remove("rounded-full", "py-2.5", "text-sm", "px-3"), e.classList.add("inline-flex", "h-11", "min-w-0", "items-center", "justify-center", "rounded-full", "px-3", "py-0", "text-[13px]", "leading-none", "whitespace-nowrap"), 
-        e.matches('main button[onclick*="showProductDetails"]') && (e.textContent = "İncele"), 
-        e.matches('main button[onclick*="quickAdd"]') && (e.textContent = "Listeye Ekle"), 
-        e.classList.contains("direct-offer-button") && (e.textContent = "Teklif Al"), "modal-add-to-cart" === e.id && (e.textContent = "Listeye Ekle");
-    }), document.querySelectorAll("main .grid.gap-8").forEach(e => {
-        e.classList.remove("gap-8"), e.classList.add("gap-5");
-    }), !document.getElementById("mobile-action-layout")) {
-        const e = document.createElement("style");
-        e.id = "mobile-action-layout", e.textContent = "\n            @media (max-width: 1023px) {\n                .mobile-action-card { padding-bottom: 28px; }\n                .mobile-action-group { width: 100%; margin-left: 0; padding: 0; gap: 4px; }\n                .mobile-action-group > button, .mobile-action-group > a {\n                    min-width: 44px;\n                    flex: 1 1 0%;\n                    padding-left: 4px;\n                    padding-right: 4px;\n                    font-size: 11px;\n                }\n            }\n        ", 
-        document.head.appendChild(e);
-    }
 }
 
 function initWhatsAppButton() {
@@ -224,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     updateCartUI(), initSocialMenu(), scheduleNonCriticalInit(() => {
         processPendingProduct(), initCartDropdown(), initConversionTracking(), initHomepageProducts(), 
-        initDirectOfferButtons(), initProductButtonSizing(), initWhatsAppButton(), initLanguageToggle();
+        initWhatsAppButton(), initLanguageToggle();
     });
     const t = document.getElementById("mobile-menu-button"), a = document.getElementById("mobile-menu");
     t && a && t.addEventListener("click", () => {
@@ -240,10 +232,9 @@ const translations = {
     "Teklif & Sipariş": "Quote & Order",
     "İletişim": "Contact",
     "Teklif İste": "Request a Quote",
-    "Teklif Listesine Ekle": "Add to Quote List",
+    "İncele →": "View →",
     "Detayları İncele": "View Details",
     "İncele": "View Details",
-    "Listeye Ekle": "Add to List",
     Kapat: "Close",
     "Hizmetlerimiz & Ürünler": "Services & Products",
     "Üreticisinden Teslimat": "Direct From the Manufacturer",
@@ -550,7 +541,7 @@ function processPendingProduct() {
     e && (localStorage.removeItem("pendingProduct"), findCartItem(e, null) || (cart.push({
         name: e,
         m2: null
-    }), saveCart(), showToast(`${e} teklif listesine eklendi!`)));
+    }), saveCart(), showToast(`${e} teklif talebinize eklendi!`)));
 }
 
 function initCartDropdown() {
@@ -583,7 +574,7 @@ function quickAdd(e, t = !1) {
     cart.push({
         name: n,
         m2: a
-    }), saveCart(), updateCartUI(), showToast(`${escapeHtml(n)} teklif listesine eklendi!`), 
+    }), saveCart(), updateCartUI(), showToast(`${escapeHtml(n)} teklif talebinize eklendi!`),
     t && (window.location.href = "teklif.html");
 }
 
@@ -627,8 +618,8 @@ function showToast(e, t = "success") {
     a || (a = document.createElement("div"), a.id = "toast-container", a.className = "fixed top-24 right-6 z-50 flex flex-col gap-3", 
     document.body.appendChild(a));
     const n = document.createElement("div"), i = "success" === t ? "bg-green-600" : "bg-amber-500", l = "success" === t ? "check-circle" : "alert-circle", r = escapeHtml(e);
-    n.className = `${i} text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3 transform translate-x-full transition-transform duration-300 ease-out`, 
-    n.innerHTML = `\n        <i data-lucide="${l}" class="h-5 w-5"></i>\n        <span class="font-medium text-sm">${r}</span>\n    `, 
+    n.className = `${i} text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3 transform translate-x-full transition-transform duration-300 ease-out`,
+    n.innerHTML = `\n        <i data-lucide="${l}" class="h-5 w-5"></i>\n        <span class="font-medium text-sm">${r}</span>\n    `,
     a.appendChild(n), "undefined" != typeof lucide && lucide.createIcons(), setTimeout(() => n.classList.remove("translate-x-full"), 10), 
     setTimeout(() => {
         n.classList.add("translate-x-full"), setTimeout(() => n.remove(), 300);
