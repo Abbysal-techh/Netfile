@@ -1,0 +1,225 @@
+.premium-site {
+    background:
+        radial-gradient(ellipse 80% 48% at 15% 0%, rgba(139, 163, 197, 0.18), transparent 58%),
+        radial-gradient(ellipse 58% 38% at 88% 92%, rgba(73, 91, 125, 0.1), transparent 62%),
+        linear-gradient(180deg, #f0ecdd 0%, #e8edf2 100%);
+    background-attachment: fixed;
+}
+
+.dark .premium-site {
+    background:
+        radial-gradient(ellipse 80% 48% at 15% 0%, rgba(139, 163, 197, 0.12), transparent 58%),
+        radial-gradient(ellipse 58% 38% at 88% 92%, rgba(73, 91, 125, 0.12), transparent 62%),
+        linear-gradient(180deg, #02122f 0%, #0a1a2e 100%);
+    background-attachment: fixed;
+}
+
+.premium-site #site-header {
+    height: 4rem;
+    border-color: rgba(73, 91, 125, 0.18);
+    background: rgba(240, 236, 221, 0.76);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(20px) saturate(180%);
+    transition: background-color 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+}
+
+.dark .premium-site #site-header {
+    border-color: rgba(255, 255, 255, 0.06);
+    background: rgba(2, 18, 47, 0.72);
+}
+
+.premium-site #site-header.is-scrolled {
+    border-color: rgba(73, 91, 125, 0.24);
+    background: rgba(240, 236, 221, 0.94);
+    box-shadow: 0 8px 28px rgba(2, 18, 47, 0.12);
+}
+
+.dark .premium-site #site-header.is-scrolled {
+    border-color: rgba(139, 163, 197, 0.14);
+    background: rgba(2, 18, 47, 0.95);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .premium-site #site-header > div:first-child > nav {
+        display: none !important;
+    }
+
+    .premium-site #site-header > div:first-child > div.hidden {
+        display: none !important;
+    }
+
+    .premium-site #site-header > div:first-child > div.flex.items-center.gap-2 {
+        display: flex !important;
+    }
+
+    .premium-site #site-header > #mobile-menu:not(.hidden) {
+        display: block !important;
+    }
+}
+
+.premium-site .premium-card,
+.premium-site main div.rounded-2xl.border[class*="bg-white"],
+.premium-site main div.rounded-3xl.border[class*="bg-white"] {
+    position: relative;
+    overflow: hidden;
+    border-color: rgba(73, 91, 125, 0.18);
+    background: rgba(255, 255, 255, 0.52);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 12px 32px rgba(2, 18, 47, 0.07);
+    transition: transform 300ms ease, border-color 300ms ease, box-shadow 300ms ease, background-color 300ms ease;
+}
+
+.dark .premium-site .premium-card,
+.dark .premium-site main div.rounded-2xl.border[class*="bg-white"],
+.dark .premium-site main div.rounded-3xl.border[class*="bg-white"] {
+    border-color: rgba(139, 163, 197, 0.14);
+    background: rgba(35, 53, 77, 0.48);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+}
+
+.premium-site .premium-card::before,
+.premium-site main div.rounded-2xl.border[class*="bg-white"]::before,
+.premium-site main div.rounded-3xl.border[class*="bg-white"]::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(139, 163, 197, 0.48), transparent);
+    content: "";
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease;
+}
+
+.premium-site .premium-card:hover,
+.premium-site main div.rounded-2xl.border[class*="bg-white"]:hover,
+.premium-site main div.rounded-3xl.border[class*="bg-white"]:hover {
+    transform: translateY(-3px);
+    border-color: rgba(73, 91, 125, 0.3);
+    box-shadow: 0 20px 42px rgba(2, 18, 47, 0.14);
+}
+
+.dark .premium-site .premium-card:hover,
+.dark .premium-site main div.rounded-2xl.border[class*="bg-white"]:hover,
+.dark .premium-site main div.rounded-3xl.border[class*="bg-white"]:hover {
+    border-color: rgba(139, 163, 197, 0.32);
+    background: rgba(35, 53, 77, 0.62);
+    box-shadow: 0 22px 44px rgba(0, 0, 0, 0.32);
+}
+
+.premium-site .premium-card:hover::before,
+.premium-site main div.rounded-2xl.border[class*="bg-white"]:hover::before,
+.premium-site main div.rounded-3xl.border[class*="bg-white"]:hover::before {
+    opacity: 1;
+}
+
+.premium-site .btn-primary,
+.premium-site a[href="teklif.html"].rounded-full,
+.premium-site main button[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(139, 163, 197, 0.28);
+    background: linear-gradient(135deg, #8ba3c5 0%, #495b7d 100%);
+    color: #02122f;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(73, 91, 125, 0.2);
+    transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+}
+
+.premium-site .btn-primary:hover,
+.premium-site a[href="teklif.html"].rounded-full:hover,
+.premium-site main button[type="submit"]:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.06);
+    box-shadow: 0 8px 24px rgba(73, 91, 125, 0.28);
+}
+
+.premium-site .btn-secondary,
+.premium-site main button[onclick^="quickAdd"],
+.premium-site #modal-add-to-cart {
+    border: 1px solid rgba(139, 163, 197, 0.36);
+    background: rgba(139, 163, 197, 0.16);
+    color: #23354d;
+    font-weight: 600;
+    transition: background-color 220ms ease, border-color 220ms ease, color 220ms ease;
+}
+
+.dark .premium-site .btn-secondary,
+.dark .premium-site main button[onclick^="quickAdd"],
+.dark .premium-site #modal-add-to-cart {
+    color: #eef2f7;
+}
+
+.premium-site .btn-secondary:hover,
+.premium-site main button[onclick^="quickAdd"]:hover,
+.premium-site #modal-add-to-cart:hover {
+    border-color: rgba(139, 163, 197, 0.62);
+    background: rgba(139, 163, 197, 0.26);
+}
+
+.premium-site .btn-ghost,
+.premium-site main button[onclick^="showProductDetails"],
+.premium-site button[onclick="closeProductModal()"] {
+    border: 1px solid rgba(139, 163, 197, 0.34);
+    background: rgba(139, 163, 197, 0.08);
+    color: #23354d;
+    transition: background-color 220ms ease, border-color 220ms ease, color 220ms ease, transform 220ms ease;
+}
+
+.dark .premium-site .btn-ghost,
+.dark .premium-site main button[onclick^="showProductDetails"],
+.dark .premium-site button[onclick="closeProductModal()"] {
+    color: #dce6f2;
+}
+
+.premium-site .btn-ghost:hover,
+.premium-site main button[onclick^="showProductDetails"]:hover,
+.premium-site button[onclick="closeProductModal()"]:hover {
+    transform: translateY(-1px);
+    border-color: rgba(139, 163, 197, 0.58);
+    background: rgba(139, 163, 197, 0.18);
+}
+
+.premium-site a[href^="https://wa.me"] {
+    border: 1px solid rgba(139, 163, 197, 0.38);
+    background: linear-gradient(135deg, #8ba3c5 0%, #495b7d 100%);
+    box-shadow: 0 6px 20px rgba(35, 53, 77, 0.24);
+}
+
+.premium-site a[href^="https://wa.me"]:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+    box-shadow: 0 10px 26px rgba(35, 53, 77, 0.32);
+}
+
+.premium-site :focus-visible {
+    outline: 3px solid rgba(139, 163, 197, 0.72);
+    outline-offset: 3px;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .premium-site #site-header {
+        background: rgba(240, 236, 221, 0.96);
+    }
+
+    .dark .premium-site #site-header {
+        background: rgba(2, 18, 47, 0.96);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .premium-site #site-header,
+    .premium-site .premium-card,
+    .premium-site main div.rounded-2xl.border[class*="bg-white"],
+    .premium-site main div.rounded-3xl.border[class*="bg-white"],
+    .premium-site .btn-primary,
+    .premium-site .btn-secondary,
+    .premium-site .btn-ghost {
+        transition: none;
+    }
+}
