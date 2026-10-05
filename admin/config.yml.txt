@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: Abbysal-techh/antalya-net-katalog
+  branch: main
+
+media_folder: "uploads" # Yüklenen görsellerin kaydedileceği klasör
+public_folder: "/uploads"
+
+collections:
+  - name: "urunler"
+    label: "Ürünler & Katalog"
+    folder: "content/urunler" # Ürün dosyalarının duracağı yer
+    create: true
+    fields:
+      - {label: "Ürün Adı", name: "title", widget: "string"}
+      - {label: "Ürün Görseli", name: "image", widget: "image"}
+      - {label: "Kısa Açıklama", name: "description", widget: "text"}
+      - {label: "Kategori", name: "category", widget: "select", options: ["Balkon", "Kedi Filesi", "Kuş Filesi", "İnşaat", "Spor Sahası"]}

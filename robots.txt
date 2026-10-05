@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://netfile.com.tr/netfile-v2/site/sitemap.xml

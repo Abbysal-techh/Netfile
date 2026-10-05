@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sayfa Bulunamadı | Netfile</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="stylesheet" href="assets/tailwind-static.min.css">
+</head>
+<body class="min-h-screen flex items-center justify-center bg-moonlight text-oxford-blue">
+    <div class="text-center p-8">
+        <h1 class="text-6xl font-bold mb-4">404</h1>
+        <p class="text-xl mb-6">AradıÄŸınız sayfa bulunamadı.</p>
+        <a href="index.html" class="rounded-full bg-storm px-8 py-3 text-moonlight font-semibold">Ana Sayfaya DÃ¶n</a>
+    </div>
+
+<!-- ÇEREZ BANNER -->
+<div id="cookie-banner" class="hidden">
+    <div class="bg-white dark:bg-dark-card border border-steel/20 dark:border-dark-border rounded-2xl shadow-2xl p-5 relative">
+        <button onclick="closeCookieBanner()" aria-label="Çerez bildirimini kapat" class="absolute top-3 right-3 text-steel hover:text-oxford-blue dark:text-frost-blue/60 dark:hover:text-moonlight transition">
+            <i data-lucide="x" class="h-4 w-4"></i>
+        </button>
+        <p class="text-sm text-steel/90 dark:text-frost-blue/90 pr-6 leading-relaxed">
+            🍪 Sitemizde deneyiminizi iyileştirmek ve reklam etkinliğini ölçmek için çerezler kullanıyoruz.
+            <a href="cerez-politikasi.html" class="text-storm dark:text-frost-blue underline hover:text-steel">Detaylı Bilgi</a>
+        </p>
+        <div class="flex gap-2 mt-4">
+            <button onclick="acceptCookies()" class="flex-1 rounded-full bg-storm px-4 py-2 text-sm font-semibold text-moonlight hover:bg-steel transition">
+                Kabul Et
+            </button>
+            <button onclick="rejectCookies()" class="flex-1 rounded-full border border-steel/30 dark:border-dark-border px-4 py-2 text-sm font-semibold text-oxford-blue dark:text-moonlight hover:bg-steel/10 dark:hover:bg-dark-bg transition">
+                Reddet
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function() {
+    const cookieChoice = localStorage.getItem('cookieChoice');
+    const banner = document.getElementById('cookie-banner');
+    if (false && !cookieChoice && banner) {
+        setTimeout(() => {
+            banner.classList.remove('hidden');
+            banner.classList.add('animate-[fadeInUp_0.4s_ease-out]');
+        }, 1000);
+    }
+})();
+
+function acceptCookies() {
+    localStorage.setItem('cookieChoice', 'accepted');
+    hideCookieBanner();
+    if (typeof gtag === 'function') {
+        gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'analytics_storage': 'granted'
+        });
+    }
+}
+
+function rejectCookies() {
+    localStorage.setItem('cookieChoice', 'rejected');
+    hideCookieBanner();
+    if (typeof gtag === 'function') {
+        gtag('consent', 'update', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+    }
+}
+
+function closeCookieBanner() {
+    hideCookieBanner();
+}
+
+function hideCookieBanner() {
+    const banner = document.getElementById('cookie-banner');
+    if (banner) {
+        banner.classList.add('opacity-0', 'translate-y-4');
+        banner.style.transition = 'opacity 0.3s, transform 0.3s';
+        setTimeout(() => {
+            banner.classList.add('hidden');
+        }, 300);
+    }
+}
+</script>
+
+</body>
+</html>
