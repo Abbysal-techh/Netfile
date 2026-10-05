@@ -140,10 +140,10 @@
         }
         window.scrollTo(0, 0);
     </script>
-    <link rel="stylesheet" href="assets/premium.css?v=20261005-v2e">
+    <link rel="stylesheet" href="assets/premium.css?v=20261005-moonlight2">
     <script defer src="assets/premium.js?v=20261005-card-fix3"></script>
 </head>
-<body class="min-h-screen bg-moonlight text-oxford-blue font-sans dark:bg-dark-bg dark:text-moonlight flex flex-col pt-16 overflow-x-hidden premium-site">
+<body class="min-h-screen bg-moonlight text-oxford-blue font-sans dark:bg-dark-bg theme-text flex flex-col pt-16 overflow-x-hidden premium-site">
 
     <header id="site-header" class="fixed top-0 left-0 w-full z-50 h-16 border-b border-steel/20 dark:border-dark-border transition-all duration-300">
         <div class="mx-auto flex max-w-7xl h-full items-center justify-between px-6 lg:px-8">
@@ -154,51 +154,51 @@
                 </div>
                 <div class="min-w-0">
                     <p class="text-sm uppercase tracking-[0.2em] text-steel font-bold m-0 leading-none dark:text-frost-blue">NETFİLE</p>
-                    <span class="block whitespace-nowrap text-base font-bold text-oxford-blue font-heading dark:text-moonlight sm:text-xl">file & ağ sistemleri</span>
+                    <span class="block whitespace-nowrap text-base font-bold text-oxford-blue font-heading theme-text sm:text-xl">file & ağ sistemleri</span>
                 </div>
             </a>
             
             <!-- Gerçek Sayfa Yönlendirme Menüsü -->
             <nav class="hidden items-center gap-8 text-sm font-semibold lg:flex">
-                <a href="index.html" class="nav-link text-oxford-blue hover:text-steel dark:text-moonlight dark:hover:text-frost-blue">Ana Sayfa</a>
-                <a href="hakkimizda.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Hakkımızda</a>
-                <a href="urunlerimiz.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Ürünlerimiz</a>
-                <a href="galeri.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Galeri</a>
-                <a href="teklif.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Teklif & Sipariş</a>
-                <a href="iletisim.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">İletişim</a>
+                <a href="index.html" class="nav-link text-oxford-blue hover:text-steel theme-text dark:hover:text-frost-blue">Ana Sayfa</a>
+                <a href="hakkimizda.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Hakkımızda</a>
+                <a href="urunlerimiz.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Ürünlerimiz</a>
+                <a href="galeri.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Galeri</a>
+                <a href="teklif.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Teklif & Sipariş</a>
+                <a href="iletisim.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">İletişim</a>
             </nav>
 
             <div class="hidden lg:flex items-center gap-4">
                 <!-- Dark Mode Toggle -->
-                <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2.5 text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border dark:text-moonlight dark:hover:border-frost-blue">
+                <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2.5 text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border theme-text dark:hover:border-frost-blue">
                     <i data-lucide="moon" class="h-5 w-5 dark:hidden"></i>
                     <i data-lucide="sun" class="h-5 w-5 hidden dark:block"></i>
                 </button>
                 <div class="relative" id="cart-widget">
-                    <button type="button" id="cart-toggle" class="inline-flex items-center gap-2 rounded-full border border-steel/30 bg-white/50 px-4 py-2 text-sm font-bold text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border dark:text-moonlight">
+                    <button type="button" id="cart-toggle" class="inline-flex items-center gap-2 rounded-full border border-steel/30 bg-white/50 px-4 py-2 text-sm font-bold text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border theme-text">
                         <i data-lucide="clipboard-list" class="h-4 w-4 text-steel dark:text-frost-blue"></i>
                         <span id="cart-count">0</span>
                     </button>
                     <div id="cart-dropdown" class="hidden absolute right-0 top-[calc(100%+8px)] w-80 rounded-2xl border border-steel/20 bg-white shadow-xl dark:bg-dark-card dark:border-dark-border z-50 overflow-hidden">
                         <div class="px-4 py-3 border-b border-steel/10 dark:border-dark-border">
-                            <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">Teklif Listeniz</p>
+                            <p class="text-sm font-bold text-oxford-blue theme-text">Teklif Listeniz</p>
                         </div>
                         <div id="cart-dropdown-items" class="max-h-60 overflow-y-auto px-2 py-2"></div>
                         <div class="px-3 py-3 border-t border-steel/10 dark:border-dark-border">
-                            <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-4 py-2 text-sm font-semibold text-moonlight hover:bg-steel transition">Teklif Sayfasına Git</a>
+                            <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-4 py-2 text-sm font-semibold theme-text hover:bg-steel transition">Teklif Sayfasına Git</a>
                         </div>
                     </div>
                 </div>
-                <a href="teklif.html" class="rounded-full bg-storm px-6 py-2.5 text-sm font-semibold text-moonlight shadow-md hover:bg-steel font-heading">Teklif İste</a>
+                <a href="teklif.html" class="rounded-full bg-storm px-6 py-2.5 text-sm font-semibold theme-text shadow-md hover:bg-steel font-heading">Teklif İste</a>
             </div>
 
             <!-- Mobil Menü Açma Butonu -->
             <div class="flex items-center gap-2 lg:hidden">
-                <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2 text-oxford-blue dark:bg-dark-card dark:border-dark-border dark:text-moonlight">
+                <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2 text-oxford-blue dark:bg-dark-card dark:border-dark-border theme-text">
                     <i data-lucide="moon" class="h-4 w-4 dark:hidden"></i>
                     <i data-lucide="sun" class="h-4 w-4 hidden dark:block"></i>
                 </button>
-                <button type="button" id="mobile-menu-button" class="text-oxford-blue dark:text-moonlight hover:text-steel p-2">
+                <button type="button" id="mobile-menu-button" class="text-oxford-blue theme-text hover:text-steel p-2">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
@@ -206,13 +206,13 @@
 
         <!-- Mobil Açılır Menü Paneli -->
         <div id="mobile-menu" class="hidden lg:hidden border-t border-steel/10 bg-moonlight dark:bg-dark-bg px-6 py-4 space-y-3">
-            <a href="index.html" class="block text-oxford-blue hover:text-steel dark:text-moonlight dark:hover:text-frost-blue py-2">Ana Sayfa</a>
-            <a href="hakkimizda.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Hakkımızda</a>
-            <a href="urunlerimiz.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Ürünlerimiz</a>
-            <a href="galeri.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Galeri</a>
-            <a href="teklif.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Teklif & Sipariş</a>
-            <a href="iletisim.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">İletişim</a>
-            <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-6 py-3 text-sm font-semibold text-moonlight shadow-md hover:bg-steel font-heading mt-2">Teklif İste</a>
+            <a href="index.html" class="block text-oxford-blue hover:text-steel theme-text dark:hover:text-frost-blue py-2">Ana Sayfa</a>
+            <a href="hakkimizda.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Hakkımızda</a>
+            <a href="urunlerimiz.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Ürünlerimiz</a>
+            <a href="galeri.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Galeri</a>
+            <a href="teklif.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Teklif & Sipariş</a>
+            <a href="iletisim.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">İletişim</a>
+            <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-6 py-3 text-sm font-semibold theme-text shadow-md hover:bg-steel font-heading mt-2">Teklif İste</a>
         </div>
     </header>
 
@@ -222,7 +222,7 @@
             <!-- Hero Bölümü -->
             <div class="mb-16 text-center">
                 <p class="text-sm uppercase tracking-[0.2em] text-steel font-bold dark:text-frost-blue">Hakkımızda</p>
-                <h2 class="mt-2 text-4xl font-bold text-oxford-blue font-heading dark:text-moonlight">Firma Hikayemiz</h2>
+                <h2 class="mt-2 text-4xl font-bold text-oxford-blue font-heading theme-text">Firma Hikayemiz</h2>
                 <p class="text-steel/80 mt-4 max-w-3xl mx-auto text-lg leading-relaxed dark:text-frost-blue/80">
                     15 yıllık tecrübemiz ile Antalya ve birçok ilde, file çeşitlerimiz ile sizlere hizmet vermeye devam ediyoruz. Filelerimizi yerinde uyguluyor ve en kaliteli hizmeti sizlere sunuyoruz.
                 </p>
@@ -231,25 +231,25 @@
             <!-- İSTATİSTİK SAYACI (Dinamik) -->
             <div id="stats-counter" class="mb-16 grid grid-cols-2 gap-6 sm:grid-cols-4 max-w-5xl mx-auto text-center font-sans">
                 <div class="group p-8 bg-gradient-to-b from-white/60 to-white/30 dark:from-dark-card/60 dark:to-dark-card/30 rounded-3xl border border-steel/10 shadow-sm transition-all duration-300 hover:shadow-md hover:border-steel/20">
-                    <p class="text-4xl font-extrabold tracking-tight text-oxford-blue dark:text-moonlight">
+                    <p class="text-4xl font-extrabold tracking-tight text-oxford-blue theme-text">
                         <span class="counter" data-target="15" data-suffix="+">0</span>
                     </p>
                     <p class="text-xs font-semibold tracking-wider uppercase text-steel/80 dark:text-frost-blue/60 mt-3">Yıllık Deneyim</p>
                 </div>
                 <div class="group p-8 bg-gradient-to-b from-white/60 to-white/30 dark:from-dark-card/60 dark:to-dark-card/30 rounded-3xl border border-steel/10 shadow-sm transition-all duration-300 hover:shadow-md hover:border-steel/20">
-                    <p class="text-4xl font-extrabold tracking-tight text-oxford-blue dark:text-moonlight">
+                    <p class="text-4xl font-extrabold tracking-tight text-oxford-blue theme-text">
                         <span class="counter" data-target="10" data-suffix="K+">0</span>
                     </p>
                     <p class="text-xs font-semibold tracking-wider uppercase text-steel/80 dark:text-frost-blue/60 mt-3">M² File Montajı</p>
                 </div>
                 <div class="group p-8 bg-gradient-to-b from-white/60 to-white/30 dark:from-dark-card/60 dark:to-dark-card/30 rounded-3xl border border-steel/10 shadow-sm transition-all duration-300 hover:shadow-md hover:border-steel/20">
-                    <p class="text-4xl font-extrabold tracking-tight text-oxford-blue dark:text-moonlight">
+                    <p class="text-4xl font-extrabold tracking-tight text-oxford-blue theme-text">
                         <span class="counter" data-target="100" data-prefix="%" data-suffix="">0</span>
                     </p>
                     <p class="text-xs font-semibold tracking-wider uppercase text-steel/80 dark:text-frost-blue/60 mt-3">Müşteri Memnuniyeti</p>
                 </div>
                 <div class="group p-8 bg-gradient-to-b from-white/60 to-white/30 dark:from-dark-card/60 dark:to-dark-card/30 rounded-3xl border border-steel/10 shadow-sm transition-all duration-300 hover:shadow-md hover:border-steel/20">
-                    <p class="text-4xl font-extrabold tracking-tight text-oxford-blue dark:text-moonlight">24/7</p>
+                    <p class="text-4xl font-extrabold tracking-tight text-oxford-blue theme-text">24/7</p>
                     <p class="text-xs font-semibold tracking-wider uppercase text-steel/80 dark:text-frost-blue/60 mt-3">Hızlı Keşif & Destek</p>
                 </div>
             </div>
@@ -257,13 +257,13 @@
             <!-- Biz Kimiz & Amacımız -->
             <div class="grid gap-8 lg:grid-cols-2 mb-16">
                 <div class="rounded-3xl border border-steel/20 bg-white/60 p-8 shadow-sm dark:bg-dark-card dark:border-dark-border">
-                    <h3 class="text-2xl font-bold font-heading text-oxford-blue mb-4 dark:text-moonlight">Biz Kimiz?</h3>
+                    <h3 class="text-2xl font-bold font-heading text-oxford-blue mb-4 theme-text">Biz Kimiz?</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         Amacımız; müşterilerimize güvenli, estetik ve uzun ömürlü file sistemleri sunarak yaşam veya çalışma alanlarını — ister ev, ister apartman, ister inşaat ya da kurum alanı olsun — daha güvenli, daha huzurlu ve daha kullanışlı hâle getirmektir.
                     </p>
                 </div>
                 <div class="rounded-3xl border border-steel/20 bg-white/60 p-8 shadow-sm dark:bg-dark-card dark:border-dark-border">
-                    <h3 class="text-2xl font-bold font-heading text-oxford-blue mb-4 dark:text-moonlight">Vizyonumuz</h3>
+                    <h3 class="text-2xl font-bold font-heading text-oxford-blue mb-4 theme-text">Vizyonumuz</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         File güvenliği ve koruma alanında ilk akla gelen firma olmak; kaliteden ve güvenlikten taviz vermeden, hem bireysel hem kurumsal alanlarda çözüm ortağı olarak tercih edilmek.
                     </p>
@@ -273,11 +273,11 @@
             <!-- Ürün Kalitesi -->
             <div class="rounded-3xl border border-steel/20 bg-gradient-to-br from-frost-blue/20 to-steel/20 p-8 mb-16 dark:from-frost-blue/10 dark:to-steel/10 dark:border-dark-border">
                 <div class="flex items-start gap-4">
-                    <div class="h-12 w-12 bg-storm rounded-xl flex items-center justify-center text-moonlight flex-shrink-0">
+                    <div class="h-12 w-12 bg-storm rounded-xl flex items-center justify-center theme-text flex-shrink-0">
                         <i data-lucide="shield-check" class="h-6 w-6"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Ürün Kalitemiz</h3>
+                        <h3 class="text-xl font-bold font-heading text-oxford-blue mb-2 theme-text">Ürün Kalitemiz</h3>
                         <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                             Ürünlerimiz, UV katkılı, güneş ışığına dayanıklı ve dış mekân şartlarında uzun süre formunu koruyabilen özel hammaddelerden üretilir. Böylece sıcak ve yüksek güneş alan iklimlerde bile filelerimizde erken yıpranma, gevşeme veya renk solması yaşanmaz.
                         </p>
@@ -287,52 +287,52 @@
 
             <!-- Değerlerimiz -->
             <div class="mb-16">
-                <h3 class="text-3xl font-bold font-heading text-oxford-blue mb-8 text-center dark:text-moonlight">Değerlerimiz</h3>
+                <h3 class="text-3xl font-bold font-heading text-oxford-blue mb-8 text-center theme-text">Değerlerimiz</h3>
                 <!-- Ortalamayı sağlayan yeni grid ve flex layout sınıfları -->
                 <div class="flex flex-wrap justify-center gap-6">
                     
                     <!-- 1. Güvenlik & Kalite -->
                     <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-2xl border border-steel/20 bg-white/60 p-6 shadow-sm dark:bg-dark-card dark:border-dark-border">
-                        <div class="h-10 w-10 bg-steel rounded-xl flex items-center justify-center text-moonlight mb-4">
+                        <div class="h-10 w-10 bg-steel rounded-xl flex items-center justify-center theme-text mb-4">
                             <i data-lucide="shield" class="h-5 w-5"></i>
                         </div>
-                        <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Güvenlik & Kalite</h4>
+                        <h4 class="font-bold text-oxford-blue mb-2 theme-text">Güvenlik & Kalite</h4>
                         <p class="text-sm text-steel/90 dark:text-frost-blue/90">Kullanılan file materyallerimiz yüksek mukavemetli, dış ortam ve hava koşullarına dayanıklı; montajlarımız profesyonel ve garantili.</p>
                     </div>
 
                     <!-- 2. Şeffaflık & Samimiyet -->
                     <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-2xl border border-steel/20 bg-white/60 p-6 shadow-sm dark:bg-dark-card dark:border-dark-border">
-                        <div class="h-10 w-10 bg-steel rounded-xl flex items-center justify-center text-moonlight mb-4">
+                        <div class="h-10 w-10 bg-steel rounded-xl flex items-center justify-center theme-text mb-4">
                             <i data-lucide="eye" class="h-5 w-5"></i>
                         </div>
-                        <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Şeffaflık & Samimiyet</h4>
+                        <h4 class="font-bold text-oxford-blue mb-2 theme-text">Şeffaflık & Samimiyet</h4>
                         <p class="text-sm text-steel/90 dark:text-frost-blue/90">Hizmet öncesi — proje, ölçü, fiyat ve uygulanabilirlik konularında netlik; hizmet sonrası destek ve sorulara hızlı yanıt.</p>
                     </div>
 
                     <!-- 3. Müşteri Odaklılık -->
                     <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-2xl border border-steel/20 bg-white/60 p-6 shadow-sm dark:bg-dark-card dark:border-dark-border">
-                        <div class="h-10 w-10 bg-steel rounded-xl flex items-center justify-center text-moonlight mb-4">
+                        <div class="h-10 w-10 bg-steel rounded-xl flex items-center justify-center theme-text mb-4">
                             <i data-lucide="users" class="h-5 w-5"></i>
                         </div>
-                        <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Müşteri Odaklılık</h4>
+                        <h4 class="font-bold text-oxford-blue mb-2 theme-text">Müşteri Odaklılık</h4>
                         <p class="text-sm text-steel/90 dark:text-frost-blue/90">Her projenin eşsiz olduğunu bilir, ölçü ve tasarımı proje alanına özel planlar; ihtiyaç ve beklentinize göre çözümler.</p>
                     </div>
 
                     <!-- 4. Uzmanlık & Deneyim -->
                     <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-2xl border border-steel/20 bg-white/60 p-6 shadow-sm dark:bg-dark-card dark:border-dark-border">
-                        <div class="h-10 w-10 bg-steel rounded-xl flex items-center justify-center text-moonlight mb-4">
+                        <div class="h-10 w-10 bg-steel rounded-xl flex items-center justify-center theme-text mb-4">
                             <i data-lucide="award" class="h-5 w-5"></i>
                         </div>
-                        <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Uzmanlık & Deneyim</h4>
+                        <h4 class="font-bold text-oxford-blue mb-2 theme-text">Uzmanlık & Deneyim</h4>
                         <p class="text-sm text-steel/90 dark:text-frost-blue/90">Yıllar içinde edindiğimiz tecrübe, doğru ürün kullanımı ve sorunsuz montaj ile güvenli ve kalıcı çözümler sunmak.</p>
                     </div>
 
                     <!-- 5. Estetik & Konfor -->
                     <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-2xl border border-steel/20 bg-white/60 p-6 shadow-sm dark:bg-dark-card dark:border-dark-border">
-                        <div class="h-10 w-10 bg-steel rounded-xl flex items-center justify-center text-moonlight mb-4">
+                        <div class="h-10 w-10 bg-steel rounded-xl flex items-center justify-center theme-text mb-4">
                             <i data-lucide="sparkles" class="h-5 w-5"></i>
                         </div>
-                        <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Estetik & Konfor</h4>
+                        <h4 class="font-bold text-oxford-blue mb-2 theme-text">Estetik & Konfor</h4>
                         <p class="text-sm text-steel/90 dark:text-frost-blue/90">Sadece güvenlik değil; yaşam alanlarınızın estetiğini ve konforunu da gözeten, göze hoş gelen file çözümleri.</p>
                     </div>
 
@@ -341,26 +341,26 @@
 
             <!-- Nasıl Çalışıyoruz -->
             <div class="rounded-3xl border border-steel/20 bg-white/80 p-8 shadow-md dark:bg-dark-card dark:border-dark-border mb-16">
-                <h3 class="text-3xl font-bold font-heading text-oxford-blue mb-8 text-center dark:text-moonlight">Nasıl Çalışıyoruz?</h3>
+                <h3 class="text-3xl font-bold font-heading text-oxford-blue mb-8 text-center theme-text">Nasıl Çalışıyoruz?</h3>
                 <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     <div class="flex gap-4">
-                        <div class="h-8 w-8 bg-storm rounded-full flex items-center justify-center text-moonlight font-bold flex-shrink-0">1</div>
+                        <div class="h-8 w-8 bg-storm rounded-full flex items-center justify-center theme-text font-bold flex-shrink-0">1</div>
                         <p class="text-steel/90 dark:text-frost-blue/90">Öncelikle — sizinle iletişime geçerek — projenizi, kullanım amacınızı ve beklentinizi dinliyoruz.</p>
                     </div>
                     <div class="flex gap-4">
-                        <div class="h-8 w-8 bg-storm rounded-full flex items-center justify-center text-moonlight font-bold flex-shrink-0">2</div>
+                        <div class="h-8 w-8 bg-storm rounded-full flex items-center justify-center theme-text font-bold flex-shrink-0">2</div>
                         <p class="text-steel/90 dark:text-frost-blue/90">Yerinde keşif veya sizin verdiğiniz ölçülere göre proje planı hazırlıyoruz.</p>
                     </div>
                     <div class="flex gap-4">
-                        <div class="h-8 w-8 bg-storm rounded-full flex items-center justify-center text-moonlight font-bold flex-shrink-0">3</div>
+                        <div class="h-8 w-8 bg-storm rounded-full flex items-center justify-center theme-text font-bold flex-shrink-0">3</div>
                         <p class="text-steel/90 dark:text-frost-blue/90">Kullanım amacına göre en uygun file tipini ve malzemeyi seçiyoruz.</p>
                     </div>
                     <div class="flex gap-4">
-                        <div class="h-8 w-8 bg-storm rounded-full flex items-center justify-center text-moonlight font-bold flex-shrink-0">4</div>
+                        <div class="h-8 w-8 bg-storm rounded-full flex items-center justify-center theme-text font-bold flex-shrink-0">4</div>
                         <p class="text-steel/90 dark:text-frost-blue/90">Deneyimli ekibimiz ile profesyonel montaj sağlıyoruz — hem ürün, hem montaj garantili.</p>
                     </div>
                     <div class="flex gap-4">
-                        <div class="h-8 w-8 bg-storm rounded-full flex items-center justify-center text-moonlight font-bold flex-shrink-0">5</div>
+                        <div class="h-8 w-8 bg-storm rounded-full flex items-center justify-center theme-text font-bold flex-shrink-0">5</div>
                         <p class="text-steel/90 dark:text-frost-blue/90">İş bitiminden sonra memnuniyetinizi önemsiyor, talep hâlinde destek sunuyoruz.</p>
                     </div>
                 </div>
@@ -369,26 +369,26 @@
             <div class="mb-16">
                 <div class="max-w-2xl mx-auto">
                     <div class="rounded-3xl border border-steel/20 bg-white/70 p-8 shadow-md dark:bg-dark-card dark:border-dark-border">
-                        <h3 class="text-2xl font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Deneyiminizi Paylaşın</h3>
+                        <h3 class="text-2xl font-bold font-heading text-oxford-blue mb-2 theme-text">Deneyiminizi Paylaşın</h3>
                         <p class="text-sm text-steel/80 mb-6 dark:text-frost-blue/80">Hizmetimizle ilgili görüşleriniz bizim için değerli.</p>
 
                         <form id="yorum-form" class="space-y-5">
                             <div>
-                                <label for="yorum-isim" class="block text-sm font-bold text-oxford-blue mb-1 dark:text-moonlight">Adınız Soyadınız</label>
+                                <label for="yorum-isim" class="block text-sm font-bold text-oxford-blue mb-1 theme-text">Adınız Soyadınız</label>
                                 <input type="text" id="yorum-isim" name="isim" required minlength="2" maxlength="100"
-                                    class="w-full rounded-2xl border border-steel/30 bg-moonlight/30 px-4 py-3 text-oxford-blue outline-none focus:border-storm dark:bg-dark-bg dark:border-dark-border dark:text-moonlight"
+                                    class="w-full rounded-2xl border border-steel/30 bg-moonlight/30 px-4 py-3 text-oxford-blue outline-none focus:border-storm dark:bg-dark-bg dark:border-dark-border theme-text"
                                     placeholder="Örn: Ayşe Yılmaz">
                             </div>
 
                             <div>
-                                <label for="yorum-konum" class="block text-sm font-bold text-oxford-blue mb-1 dark:text-moonlight">Şehir / İlçe (Opsiyonel)</label>
+                                <label for="yorum-konum" class="block text-sm font-bold text-oxford-blue mb-1 theme-text">Şehir / İlçe (Opsiyonel)</label>
                                 <input type="text" id="yorum-konum" name="konum" maxlength="100"
-                                    class="w-full rounded-2xl border border-steel/30 bg-moonlight/30 px-4 py-3 text-oxford-blue outline-none focus:border-storm dark:bg-dark-bg dark:border-dark-border dark:text-moonlight"
+                                    class="w-full rounded-2xl border border-steel/30 bg-moonlight/30 px-4 py-3 text-oxford-blue outline-none focus:border-storm dark:bg-dark-bg dark:border-dark-border theme-text"
                                     placeholder="Örn: Antalya / Kepez">
                             </div>
 
                             <div>
-                                <label class="block text-sm font-bold text-oxford-blue mb-1 dark:text-moonlight">Puanınız</label>
+                                <label class="block text-sm font-bold text-oxford-blue mb-1 theme-text">Puanınız</label>
                                 <div class="flex gap-2" id="yildiz-grup">
                                     <button type="button" data-yildiz="1" class="yildiz-btn text-3xl text-gray-300 hover:text-yellow-400 transition">★</button>
                                     <button type="button" data-yildiz="2" class="yildiz-btn text-3xl text-gray-300 hover:text-yellow-400 transition">★</button>
@@ -400,9 +400,9 @@
                             </div>
 
                             <div>
-                                <label for="yorum-metin" class="block text-sm font-bold text-oxford-blue mb-1 dark:text-moonlight">Yorumunuz</label>
+                                <label for="yorum-metin" class="block text-sm font-bold text-oxford-blue mb-1 theme-text">Yorumunuz</label>
                                 <textarea id="yorum-metin" name="yorum" rows="4" required minlength="10" maxlength="1000"
-                                    class="w-full rounded-2xl border border-steel/30 bg-moonlight/30 px-4 py-3 text-oxford-blue outline-none focus:border-storm resize-none dark:bg-dark-bg dark:border-dark-border dark:text-moonlight"
+                                    class="w-full rounded-2xl border border-steel/30 bg-moonlight/30 px-4 py-3 text-oxford-blue outline-none focus:border-storm resize-none dark:bg-dark-bg dark:border-dark-border theme-text"
                                     placeholder="Hizmetimiz hakkındaki düşüncelerinizi yazın..."></textarea>
                             </div>
 
@@ -412,7 +412,7 @@
                             </label>
 
                             <button type="submit" id="yorum-gonder-btn"
-                                class="w-full rounded-full bg-storm py-3 text-base font-bold text-moonlight hover:bg-steel transition font-heading shadow-md">
+                                class="w-full rounded-full bg-storm py-3 text-base font-bold theme-text hover:bg-steel transition font-heading shadow-md">
                                 Yorumu Gönder
                             </button>
 
@@ -424,7 +424,7 @@
 
             <!-- Müşteri Yorumları -->
             <div class="mb-16">
-                <h3 class="text-3xl font-bold font-heading text-oxford-blue mb-8 text-center dark:text-moonlight">Müşteri Yorumları</h3>
+                <h3 class="text-3xl font-bold font-heading text-oxford-blue mb-8 text-center theme-text">Müşteri Yorumları</h3>
                 <div class="relative">
                     <div id="testimonial-slider" class="overflow-hidden">
                         <div id="testimonial-track" class="flex transition-transform duration-500 ease-in-out">
@@ -438,7 +438,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Balkonumuza taktırdığımız file çok kaliteli. Çocuklarımız için güvenli bir alan oluşturdular. Teşekkürler!"</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Ayşe Y., Antalya</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Ayşe Y., Antalya</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -451,7 +451,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Kedilerimiz artık balkondan düşmüyor. Hızlı montaj ve profesyonel ekip. Kesinlikle tavsiye ederim."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Mehmet K., Lara</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Mehmet K., Lara</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -464,7 +464,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Şantiyemizde kullandığımız güvenlik ağları TS standartlarına uygun. Güvenilir bir firma."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Ali T., İnşaat Firması</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Ali T., İnşaat Firması</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -477,7 +477,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Okulumuzun merdiven boşluklarına file taktırdık. Çocuk güvenliği için harika çözüm."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Fatma H., Okul Müdürü</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Fatma H., Okul Müdürü</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -490,7 +490,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Halı sahamızın tavanına file yaptırdık. Top top gidiyor, çok memnunuz."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Mustafa K., Spor Sahası</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Mustafa K., Spor Sahası</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -503,7 +503,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Villamızın terasına kuş filesi taktırdık. Artık kuş sorunu yok, çok temiz çalışma."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Selim B., Muratpaşa</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Selim B., Muratpaşa</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -516,7 +516,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Apartman sitemize toplu file montajı yaptılar. Fiyatlar uygun, kalite yüksek."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Zeynep D., Site Yöneticisi</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Zeynep D., Site Yöneticisi</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -529,7 +529,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Tenis kortumuzun çevresine file çektirdik. Top dışarı çıkmıyor, mükemmel."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Caner Y., Tenis Kulübü</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Caner Y., Tenis Kulübü</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -542,7 +542,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"İş güvenliği ağları aldık, kalite harika. İşçilerimiz için güvenli ortam sağladılar."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Hakan M., Şantiye Şefi</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Hakan M., Şantiye Şefi</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -555,7 +555,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Kedi filesi aldık, kedimiz artık rahat. Montaj hızlı ve temizdi."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Elif K., Kepez</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Elif K., Kepez</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -568,7 +568,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Çocuk güvenlik filesi taktırdık, içimiz rahat. Profesyonel ekip."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Deniz A., Konyaaltı</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Deniz A., Konyaaltı</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -581,7 +581,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Fabrika çatımıza kuş filesi taktırdık. Sorun çözüldü, teşekkürler."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Ömer F., Sanayi</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Ömer F., Sanayi</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -594,7 +594,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Kolejimize merdiven filesi taktırdık. Öğrenci güvenliği için ideal çözüm."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Ahmet Y., Kolej Müdürü</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Ahmet Y., Kolej Müdürü</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -607,7 +607,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Spor salonumuzun tavanına file yaptırdık. Sporcular için güvenli ortam."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Burak S., Spor Salonu</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Burak S., Spor Salonu</p>
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
@@ -620,7 +620,7 @@
                                         <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-yellow-500"></i>
                                     </div>
                                     <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"Balkon güvenlik filesi aldık, kalite harika. Fiyatlar da makul."</p>
-                                    <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— Sema T., Serik</p>
+                                    <p class="text-sm font-bold text-oxford-blue theme-text">— Sema T., Serik</p>
                                 </div>
                             </div>
                         </div>
@@ -636,7 +636,7 @@
 
             <!-- Referanslar -->
             <div class="mb-16">
-                <h3 class="text-3xl font-bold font-heading text-oxford-blue mb-8 text-center dark:text-moonlight">Referanslarımız</h3>
+                <h3 class="text-3xl font-bold font-heading text-oxford-blue mb-8 text-center theme-text">Referanslarımız</h3>
                 <div class="relative">
                     <div id="reference-slider" class="overflow-hidden">
                         <div id="reference-track" class="flex transition-transform duration-500 ease-in-out">
@@ -767,11 +767,11 @@
 
             <!-- Sıkça Sorulan Sorular -->
             <div>
-                <h3 class="text-3xl font-bold font-heading text-oxford-blue mb-8 text-center dark:text-moonlight">Sıkça Sorulan Sorular</h3>
+                <h3 class="text-3xl font-bold font-heading text-oxford-blue mb-8 text-center theme-text">Sıkça Sorulan Sorular</h3>
                 <div class="space-y-4">
                     <div class="rounded-2xl border border-steel/20 bg-white/60 overflow-hidden dark:bg-dark-card dark:border-dark-border">
                         <button onclick="toggleFaq(this)" class="w-full px-6 py-4 flex items-center justify-between text-left">
-                            <span class="font-bold text-oxford-blue dark:text-moonlight">Montaj ne kadar sürer?</span>
+                            <span class="font-bold text-oxford-blue theme-text">Montaj ne kadar sürer?</span>
                             <i data-lucide="chevron-down" class="h-5 w-5 text-steel transition-transform dark:text-frost-blue"></i>
                         </button>
                         <div class="faq-content hidden px-6 pb-4">
@@ -780,7 +780,7 @@
                     </div>
                     <div class="rounded-2xl border border-steel/20 bg-white/60 overflow-hidden dark:bg-dark-card dark:border-dark-border">
                         <button onclick="toggleFaq(this)" class="w-full px-6 py-4 flex items-center justify-between text-left">
-                            <span class="font-bold text-oxford-blue dark:text-moonlight">Garanti süresi nedir?</span>
+                            <span class="font-bold text-oxford-blue theme-text">Garanti süresi nedir?</span>
                             <i data-lucide="chevron-down" class="h-5 w-5 text-steel transition-transform dark:text-frost-blue"></i>
                         </button>
                         <div class="faq-content hidden px-6 pb-4">
@@ -789,7 +789,7 @@
                     </div>
                     <div class="rounded-2xl border border-steel/20 bg-white/60 overflow-hidden dark:bg-dark-card dark:border-dark-border">
                         <button onclick="toggleFaq(this)" class="w-full px-6 py-4 flex items-center justify-between text-left">
-                            <span class="font-bold text-oxford-blue dark:text-moonlight">Kediler bu fileyi yırtabilir mi?</span>
+                            <span class="font-bold text-oxford-blue theme-text">Kediler bu fileyi yırtabilir mi?</span>
                             <i data-lucide="chevron-down" class="h-5 w-5 text-steel transition-transform dark:text-frost-blue"></i>
                         </button>
                         <div class="faq-content hidden px-6 pb-4">
@@ -798,7 +798,7 @@
                     </div>
                     <div class="rounded-2xl border border-steel/20 bg-white/60 overflow-hidden dark:bg-dark-card dark:border-dark-border">
                         <button onclick="toggleFaq(this)" class="w-full px-6 py-4 flex items-center justify-between text-left">
-                            <span class="font-bold text-oxford-blue dark:text-moonlight">UV koruması var mı?</span>
+                            <span class="font-bold text-oxford-blue theme-text">UV koruması var mı?</span>
                             <i data-lucide="chevron-down" class="h-5 w-5 text-steel transition-transform dark:text-frost-blue"></i>
                         </button>
                         <div class="faq-content hidden px-6 pb-4">
@@ -811,7 +811,7 @@
 
         <section class="bg-moonlight py-16 dark:bg-dark-bg">
             <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
-                <h2 class="font-heading text-3xl font-bold text-oxford-blue dark:text-moonlight">Antalya'da Profesyonel File ve Ağ Sistemleri</h2>
+                <h2 class="font-heading text-3xl font-bold text-oxford-blue theme-text">Antalya'da Profesyonel File ve Ağ Sistemleri</h2>
                 <p class="mt-6 text-base leading-8 text-steel/90 dark:text-frost-blue/90">
                     Netfile olarak Antalya genelinde balkon filesi, kedi filesi, kuş engelleme filesi, inşaat güvenlik filesi ve koruma ağı sistemleri kurulumu gerçekleştiriyoruz. Çocuk güvenliği, evcil hayvan koruması ve endüstriyel güvenlik çözümleri için profesyonel montaj hizmeti sunuyoruz.
                 </p>
@@ -833,7 +833,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="bg-storm text-frost-blue dark:bg-oxford-blue dark:text-moonlight">
+    <footer class="bg-storm text-frost-blue dark:bg-oxford-blue theme-text">
         <div class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
             <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                 <!-- Firma Bilgileri -->
@@ -1076,7 +1076,7 @@
                                     <div class="rounded-2xl border border-steel/20 bg-white/60 p-6 shadow-sm dark:bg-dark-card dark:border-dark-border h-full">
                                         <div class="flex items-center gap-1 mb-3">${yildizlar}</div>
                                         <p class="text-sm text-steel/90 dark:text-frost-blue/90 mb-4">"${y.yorum}"</p>
-                                        <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">— ${y.isim}${y.konum ? ', ' + y.konum : ''}</p>
+                                        <p class="text-sm font-bold text-oxford-blue theme-text">— ${y.isim}${y.konum ? ', ' + y.konum : ''}</p>
                                     </div>
                                 </div>`;
                             testimonialTrack.insertAdjacentHTML('afterbegin', kart);
@@ -1092,7 +1092,7 @@
 <!-- ÇEREZ BANNER -->
 <div id="cookie-banner" class="hidden">
     <div class="bg-white dark:bg-dark-card border border-steel/20 dark:border-dark-border rounded-2xl shadow-2xl p-5 relative">
-        <button onclick="closeCookieBanner()" aria-label="Çerez bildirimini kapat" class="absolute top-3 right-3 text-steel hover:text-oxford-blue dark:text-frost-blue/60 dark:hover:text-moonlight transition">
+        <button onclick="closeCookieBanner()" aria-label="Çerez bildirimini kapat" class="absolute top-3 right-3 text-steel hover:text-oxford-blue dark:text-frost-blue/60 moonlight-hover transition">
             <i data-lucide="x" class="h-4 w-4"></i>
         </button>
         <p class="text-sm text-steel/90 dark:text-frost-blue/90 pr-6 leading-relaxed">
@@ -1100,10 +1100,10 @@
             <a href="cerez-politikasi.html" class="text-storm dark:text-frost-blue underline hover:text-steel">Detaylı Bilgi</a>
         </p>
         <div class="flex gap-2 mt-4">
-            <button onclick="acceptCookies()" class="flex-1 rounded-full bg-storm px-4 py-2 text-sm font-semibold text-moonlight hover:bg-steel transition">
+            <button onclick="acceptCookies()" class="flex-1 rounded-full bg-storm px-4 py-2 text-sm font-semibold theme-text hover:bg-steel transition">
                 Kabul Et
             </button>
-            <button onclick="rejectCookies()" class="flex-1 rounded-full border border-steel/30 dark:border-dark-border px-4 py-2 text-sm font-semibold text-oxford-blue dark:text-moonlight hover:bg-steel/10 dark:hover:bg-dark-bg transition">
+            <button onclick="rejectCookies()" class="flex-1 rounded-full border border-steel/30 dark:border-dark-border px-4 py-2 text-sm font-semibold text-oxford-blue theme-text hover:bg-steel/10 dark:hover:bg-dark-bg transition">
                 Reddet
             </button>
         </div>

@@ -427,6 +427,272 @@
     text-shadow: 0 2px 14px rgba(2, 18, 47, 0.72);
 }
 
+.premium-site .premium-hero-fade {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    height: 8rem;
+    background: linear-gradient(to top, var(--bg-primary), transparent);
+    pointer-events: none;
+}
+
+.premium-site .premium-image-hero::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    height: 8rem;
+    background: linear-gradient(to top, var(--bg-primary), transparent);
+    content: "";
+    pointer-events: none;
+}
+
+:root {
+    --bg-primary: #0a0e1a;
+    --bg-card: #333c50;
+    --border: #546282;
+    --text-h1: #cad9f5;
+    --text-heading: #9cb2e8;
+    --text-body: #9cb2e8;
+    --text-secondary: #9cb2e8;
+    --accent: #f0ecdd;
+    --accent-bright: #ffffff;
+    --accent-dim: #d8d4c5;
+}
+
+.premium-site,
+.dark .premium-site {
+    color-scheme: dark;
+    color: var(--text-body);
+    background:
+        radial-gradient(ellipse 80% 50% at 20% 0%, rgba(156, 178, 232, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 80% 100%, rgba(84, 98, 130, 0.1) 0%, transparent 50%),
+        linear-gradient(180deg, #0a0e1a 0%, #0e1218 50%, #0a0e1a 100%);
+    background-attachment: fixed;
+}
+
+.premium-site h1,
+.premium-site .h1 {
+    color: var(--text-h1) !important;
+}
+
+.premium-site main > section:first-child .relative.z-10 h1 {
+    color: var(--accent) !important;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.premium-site main > section:first-child .relative.z-10 p:first-child {
+    color: rgba(240, 236, 221, 0.72) !important;
+}
+
+.premium-site main > section:first-child .relative.z-10 p.theme-text-90 {
+    color: var(--text-h1) !important;
+}
+
+@media (max-width: 639px) {
+    .premium-site main > section:first-child .relative.z-10 h1 {
+        font-size: 2rem;
+    }
+}
+
+.premium-site h2,
+.premium-site .h2,
+.premium-site h3,
+.premium-site .h3,
+.premium-site h4,
+.premium-site h5,
+.premium-site h6 {
+    color: var(--text-heading) !important;
+}
+
+.premium-site main p,
+.premium-site main li,
+.premium-site .body-text,
+.premium-site .theme-text,
+.premium-site .theme-text-90,
+.premium-site .theme-text-80 {
+    color: var(--text-body) !important;
+}
+
+.premium-site .theme-text-90 {
+    color: rgba(156, 178, 232, 0.9) !important;
+}
+
+.premium-site .theme-text-80 {
+    color: rgba(156, 178, 232, 0.8) !important;
+}
+
+.premium-site .moonlight-hover:hover {
+    color: var(--accent) !important;
+}
+
+.premium-site main p,
+.premium-site .body-text {
+    opacity: 0.9;
+}
+
+.premium-site .text-secondary,
+.premium-site .text-muted {
+    color: var(--text-secondary) !important;
+}
+
+.premium-site .premium-card,
+.premium-site main div.rounded-2xl.border[class*="bg-white"],
+.premium-site main div.rounded-3xl.border[class*="bg-white"] {
+    border-color: rgba(84, 98, 130, 0.3);
+    background: rgba(51, 60, 80, 0.72);
+}
+
+.dark .premium-site .premium-card,
+.dark .premium-site main div.rounded-2xl.border[class*="bg-white"],
+.dark .premium-site main div.rounded-3xl.border[class*="bg-white"] {
+    border-color: rgba(84, 98, 130, 0.3);
+    background: rgba(51, 60, 80, 0.72);
+}
+
+.premium-site .premium-card:hover,
+.premium-site main div.rounded-2xl.border[class*="bg-white"]:hover,
+.premium-site main div.rounded-3xl.border[class*="bg-white"]:hover {
+    border-color: rgba(240, 236, 221, 0.25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(240, 236, 221, 0.1);
+}
+
+.dark .premium-site .premium-card:hover,
+.dark .premium-site main div.rounded-2xl.border[class*="bg-white"]:hover,
+.dark .premium-site main div.rounded-3xl.border[class*="bg-white"]:hover {
+    border-color: rgba(240, 236, 221, 0.25);
+    background: rgba(51, 60, 80, 0.82);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(240, 236, 221, 0.1);
+}
+
+.premium-site .btn-primary,
+.premium-site a[href="teklif.html"].rounded-full,
+.premium-site main button[type="submit"] {
+    border-color: rgba(240, 236, 221, 0.35);
+    background: var(--accent);
+    color: var(--bg-primary) !important;
+    box-shadow:
+        0 0 0 1px rgba(240, 236, 221, 0.3),
+        0 4px 16px rgba(240, 236, 221, 0.25),
+        0 0 30px rgba(240, 236, 221, 0.1);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-site .btn-primary:hover,
+.premium-site a[href="teklif.html"].rounded-full:hover,
+.premium-site main button[type="submit"]:hover {
+    background: var(--accent-bright);
+    box-shadow:
+        0 0 0 1px rgba(240, 236, 221, 0.5),
+        0 8px 28px rgba(240, 236, 221, 0.4),
+        0 0 50px rgba(240, 236, 221, 0.2);
+    transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .premium-site .btn-primary,
+    .premium-site a[href="teklif.html"].rounded-full,
+    .premium-site main button[type="submit"] {
+        transition: none;
+    }
+}
+
+.premium-site .btn-secondary,
+.premium-site main button[onclick^="quickAdd"],
+.premium-site #modal-add-to-cart,
+.premium-site .btn-ghost,
+.premium-site main button[onclick^="showProductDetails"],
+.premium-site button[onclick="closeProductModal()"] {
+    border-color: rgba(156, 178, 232, 0.3);
+    background: transparent;
+    color: var(--text-body) !important;
+}
+
+.premium-site .btn-secondary:hover,
+.premium-site main button[onclick^="quickAdd"]:hover,
+.premium-site #modal-add-to-cart:hover,
+.premium-site .btn-ghost:hover,
+.premium-site main button[onclick^="showProductDetails"]:hover,
+.premium-site button[onclick="closeProductModal()"]:hover {
+    border-color: var(--accent);
+    background: rgba(240, 236, 221, 0.05);
+    color: var(--accent) !important;
+}
+
+.premium-site main a:not([href^="https://wa.me"]):hover,
+.premium-site footer a:hover {
+    color: var(--accent) !important;
+}
+
+.premium-site footer {
+    border-top-color: rgba(84, 98, 130, 0.2);
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+}
+
+.premium-site footer a {
+    color: var(--text-body);
+}
+
+.premium-site footer h4 {
+    color: var(--text-h1) !important;
+}
+
+.premium-site .heading-accent {
+    color: var(--accent) !important;
+}
+
+.premium-site .heading-accent-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.premium-site .heading-accent-underline::after {
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent) 50%, transparent);
+    content: "";
+}
+
+.premium-site .stat-number {
+    background: linear-gradient(135deg, var(--text-h1) 0%, var(--accent) 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.premium-site .category-tag {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.premium-site .incele-link {
+    color: var(--text-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.premium-site .incele-link:hover {
+    color: var(--accent);
+}
+
+.premium-site :focus-visible {
+    outline-color: rgba(240, 236, 221, 0.8);
+}
+
 @media (min-width: 1024px) {
     .premium-site main > section.relative .relative.z-10 h1 {
         font-size: 4.5rem;

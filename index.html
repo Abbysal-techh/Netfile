@@ -172,10 +172,10 @@
         }
         window.scrollTo(0, 0);
     </script>
-    <link rel="stylesheet" href="assets/premium.css?v=20261005-v2e">
+    <link rel="stylesheet" href="assets/premium.css?v=20261005-moonlight2">
     <script defer src="assets/premium.js?v=20261005-card-fix3"></script>
 </head>
-<body class="min-h-screen bg-moonlight text-oxford-blue font-sans dark:bg-dark-bg dark:text-moonlight flex flex-col pt-16 overflow-x-hidden premium-site">
+<body class="min-h-screen bg-moonlight text-oxford-blue font-sans dark:bg-dark-bg theme-text flex flex-col pt-16 overflow-x-hidden premium-site">
 
     <header id="site-header" class="fixed top-0 left-0 w-full z-50 h-16 border-b border-steel/20 dark:border-dark-border transition-all duration-300">
         <div class="mx-auto flex max-w-7xl h-full items-center justify-between px-6 lg:px-8">
@@ -186,51 +186,51 @@
                 </div>
                 <div class="min-w-0">
                     <p class="text-sm uppercase tracking-[0.2em] text-steel font-bold m-0 leading-none dark:text-frost-blue">NETFİLE</p>
-                    <span class="block whitespace-nowrap text-base font-bold text-oxford-blue font-heading dark:text-moonlight sm:text-xl">file & ağ sistemleri</span>
+                    <span class="block whitespace-nowrap text-base font-bold text-oxford-blue font-heading theme-text sm:text-xl">file & ağ sistemleri</span>
                 </div>
             </a>
             
             <!-- Gerçek Sayfa Yönlendirme Menüsü -->
             <nav class="hidden items-center gap-8 text-sm font-semibold lg:flex">
-                <a href="index.html" class="nav-link text-oxford-blue hover:text-steel dark:text-moonlight dark:hover:text-frost-blue">Ana Sayfa</a>
-                <a href="hakkimizda.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Hakkımızda</a>
-                <a href="urunlerimiz.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Ürünlerimiz</a>
-                <a href="galeri.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Galeri</a>
-                <a href="teklif.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Teklif & Sipariş</a>
-                <a href="iletisim.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">İletişim</a>
+                <a href="index.html" class="nav-link text-oxford-blue hover:text-steel theme-text dark:hover:text-frost-blue">Ana Sayfa</a>
+                <a href="hakkimizda.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Hakkımızda</a>
+                <a href="urunlerimiz.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Ürünlerimiz</a>
+                <a href="galeri.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Galeri</a>
+                <a href="teklif.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Teklif & Sipariş</a>
+                <a href="iletisim.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">İletişim</a>
             </nav>
 
             <div class="hidden lg:flex items-center gap-4">
                 <!-- Dark Mode Toggle -->
-                <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2.5 text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border dark:text-moonlight dark:hover:border-frost-blue">
+                <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2.5 text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border theme-text dark:hover:border-frost-blue">
                     <i data-lucide="moon" class="h-5 w-5 dark:hidden"></i>
                     <i data-lucide="sun" class="h-5 w-5 hidden dark:block"></i>
                 </button>
                 <div class="relative" id="cart-widget">
-                    <button type="button" id="cart-toggle" class="inline-flex items-center gap-2 rounded-full border border-steel/30 bg-white/50 px-4 py-2 text-sm font-bold text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border dark:text-moonlight">
+                    <button type="button" id="cart-toggle" class="inline-flex items-center gap-2 rounded-full border border-steel/30 bg-white/50 px-4 py-2 text-sm font-bold text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border theme-text">
                         <i data-lucide="clipboard-list" class="h-4 w-4 text-steel dark:text-frost-blue"></i>
                         <span id="cart-count">0</span>
                     </button>
                     <div id="cart-dropdown" class="hidden absolute right-0 top-[calc(100%+8px)] w-80 rounded-2xl border border-steel/20 bg-white shadow-xl dark:bg-dark-card dark:border-dark-border z-50 overflow-hidden">
                         <div class="px-4 py-3 border-b border-steel/10 dark:border-dark-border">
-                            <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">Teklif Listeniz</p>
+                            <p class="text-sm font-bold text-oxford-blue theme-text">Teklif Listeniz</p>
                         </div>
                         <div id="cart-dropdown-items" class="max-h-60 overflow-y-auto px-2 py-2"></div>
                         <div class="px-3 py-3 border-t border-steel/10 dark:border-dark-border">
-                            <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-4 py-2 text-sm font-semibold text-moonlight hover:bg-steel transition">Teklif Sayfasına Git</a>
+                            <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-4 py-2 text-sm font-semibold theme-text hover:bg-steel transition">Teklif Sayfasına Git</a>
                         </div>
                     </div>
                 </div>
-                <a href="teklif.html" class="rounded-full bg-storm px-6 py-2.5 text-sm font-semibold text-moonlight shadow-md hover:bg-steel font-heading">Teklif İste</a>
+                <a href="teklif.html" class="rounded-full bg-storm px-6 py-2.5 text-sm font-semibold theme-text shadow-md hover:bg-steel font-heading">Teklif İste</a>
             </div>
 
             <!-- Mobil Menü Açma Butonu -->
             <div class="flex items-center gap-2 lg:hidden">
-                <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2 text-oxford-blue dark:bg-dark-card dark:border-dark-border dark:text-moonlight">
+                <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2 text-oxford-blue dark:bg-dark-card dark:border-dark-border theme-text">
                     <i data-lucide="moon" class="h-4 w-4 dark:hidden"></i>
                     <i data-lucide="sun" class="h-4 w-4 hidden dark:block"></i>
                 </button>
-                <button type="button" id="mobile-menu-button" class="text-oxford-blue dark:text-moonlight hover:text-steel p-2">
+                <button type="button" id="mobile-menu-button" class="text-oxford-blue theme-text hover:text-steel p-2">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
@@ -238,20 +238,20 @@
 
         <!-- Mobil Açılır Menü Paneli -->
         <div id="mobile-menu" class="hidden lg:hidden border-t border-steel/10 bg-moonlight dark:bg-dark-bg px-6 py-4 space-y-3">
-            <a href="index.html" class="block text-oxford-blue hover:text-steel dark:text-moonlight dark:hover:text-frost-blue py-2">Ana Sayfa</a>
-            <a href="hakkimizda.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Hakkımızda</a>
-            <a href="urunlerimiz.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Ürünlerimiz</a>
-            <a href="galeri.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Galeri</a>
-            <a href="teklif.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Teklif & Sipariş</a>
-            <a href="iletisim.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">İletişim</a>
-            <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-6 py-3 text-sm font-semibold text-moonlight shadow-md hover:bg-steel font-heading mt-2">Teklif İste</a>
+            <a href="index.html" class="block text-oxford-blue hover:text-steel theme-text dark:hover:text-frost-blue py-2">Ana Sayfa</a>
+            <a href="hakkimizda.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Hakkımızda</a>
+            <a href="urunlerimiz.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Ürünlerimiz</a>
+            <a href="galeri.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Galeri</a>
+            <a href="teklif.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Teklif & Sipariş</a>
+            <a href="iletisim.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">İletişim</a>
+            <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-6 py-3 text-sm font-semibold theme-text shadow-md hover:bg-steel font-heading mt-2">Teklif İste</a>
         </div>
     </header>
 
     <!-- ================= ANA SAYFA İÇERİĞİ ================= -->
     <main class="flex-grow">
       <!-- 3'LÜ YAZI ORTALANMIŞ CAROUSEL (SLIDER) -->
-        <section class="relative h-[550px] w-full overflow-hidden bg-storm text-moonlight">
+        <section class="relative h-[550px] w-full overflow-hidden bg-storm theme-text">
             <!-- Slaytlar (Görseller + Overlay) -->
             
  <!-- Slide 1 (Daha Genel Kalite Sloganı) -->
@@ -263,7 +263,7 @@
         <h1 data-i18n="Yıllara Meydan Okuyan Sürdürülebilir Yapı" class="text-4xl sm:text-6xl font-bold font-heading tracking-tight leading-tight text-white drop-shadow-md">
             Yıllara Meydan Okuyan Sürdürülebilir Yapı
         </h1>
-        <p data-i18n="Zorlu dış mekan koşullarında formunu koruyan birinci sınıf hammadde kalitesi." class="text-moonlight/90 text-sm sm:text-base max-w-xl mx-auto font-medium">
+        <p data-i18n="Zorlu dış mekan koşullarında formunu koruyan birinci sınıf hammadde kalitesi." class="theme-text-90 text-sm sm:text-base max-w-xl mx-auto font-medium">
             Zorlu dış mekan koşullarında formunu koruyan birinci sınıf hammadde kalitesi.
         </p>
     </div>
@@ -278,7 +278,7 @@
         <h1 data-i18n="Balkonlarınızda Güvenli ve Konforlu Yaşam" class="text-4xl sm:text-6xl font-bold font-heading tracking-tight leading-tight text-white drop-shadow-md">
             Balkonlarınızda Güvenli ve <span class="text-white">Konforlu</span> Yaşam
         </h1>
-        <p data-i18n="Görüş açınızı kapatmayan, yüksek mukavemetli ve estetik koruma ağları." class="text-moonlight/90 text-sm sm:text-base max-w-xl mx-auto font-medium">
+        <p data-i18n="Görüş açınızı kapatmayan, yüksek mukavemetli ve estetik koruma ağları." class="theme-text-90 text-sm sm:text-base max-w-xl mx-auto font-medium">
             Görüş açınızı kapatmayan, yüksek mukavemetli ve estetik koruma ağları.
         </p>
     </div>
@@ -293,21 +293,22 @@
         <h1 data-i18n="Alanınıza Özel Kusursuz Montaj Süreci" class="text-4xl sm:text-6xl font-bold font-heading tracking-tight leading-tight text-white drop-shadow-md">
             Alanınıza Özel Kusursuz Montaj Süreci
         </h1>
-        <p data-i18n="Uzman kadromuzla alanınız için en doğru montaj hizmeti" class="text-moonlight/80 text-sm sm:text-base max-w-xl mx-auto font-medium">
+        <p data-i18n="Uzman kadromuzla alanınız için en doğru montaj hizmeti" class="theme-text-80 text-sm sm:text-base max-w-xl mx-auto font-medium">
             Uzman kadromuzla alanınız için en doğru montaj hizmeti
         </p>
     </div>
 </div>
+            <div class="premium-hero-fade"></div>
         </section>
 
         <!-- HIZLI ÜRÜN ÖNİZLEME (Hizmetlerimiz) -->
         <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
             <div class="mb-8 rounded-3xl border border-steel/15 bg-white/45 px-5 py-8 text-center shadow-sm sm:px-8 dark:border-dark-border dark:bg-dark-card/60">
                 <p class="text-sm uppercase tracking-[0.2em] text-steel font-bold dark:text-frost-blue">Hizmetlerimiz & Ürünler</p>
-                <h2 class="mt-2 text-3xl font-bold text-oxford-blue font-heading sm:text-4xl dark:text-moonlight">Antalya Geneli Hizmet Alanlarımız</h2>
+                <h2 class="mt-2 text-3xl font-bold text-oxford-blue font-heading sm:text-4xl theme-text">Antalya Geneli Hizmet Alanlarımız</h2>
                 <p class="mx-auto mt-2 max-w-2xl text-steel/80 dark:text-frost-blue/80">İhtiyacınıza en uygun, dayanıklı ve yüksek mukavemetli file çeşitlerimiz.</p>
                 <div class="mx-auto mt-8 max-w-3xl border-t border-steel/15 pt-6 dark:border-dark-border">
-                    <h3 class="text-3xl font-bold text-oxford-blue font-heading dark:text-moonlight sm:text-4xl">Üreticisinden Teslimat</h3>
+                    <h3 class="text-3xl font-bold text-oxford-blue font-heading theme-text sm:text-4xl">Üreticisinden Teslimat</h3>
                     <p class="mt-3 text-sm leading-relaxed text-steel/90 dark:text-frost-blue/90">Antalya üretim tesislerimizden doğrudan, aracı olmadan en uygun fiyatlarla projelerinize sevk. TS EN 1263-1 standartlarında test edilip onaylanmış, TSE belgeli ve güvenilir üretim.</p>
                 </div>
             </div>
@@ -320,13 +321,13 @@
                             <img loading="lazy" decoding="async" src="images/cocukfilesiantalya.webp" srcset="images/cocukfilesiantalya-480.webp 480w, images/cocukfilesiantalya-768.webp 768w, images/cocukfilesiantalya.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Balkon Güvenlik Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
-                        <h3 class="text-2xl font-bold font-heading text-oxford-blue dark:text-moonlight">Balkon Güvenlik Filesi</h3>
+                        <h3 class="text-2xl font-bold font-heading text-oxford-blue theme-text">Balkon Güvenlik Filesi</h3>
                         <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">Çocuklarınız ve aileniz için yüksek katlı balkonlarda tam koruma sağlayan özel montajlı ağlar.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('balkon')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Balkon Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
+                        <button onclick="showProductDetails('balkon')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
+                        <button onclick="quickAdd('Balkon Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Ürün 2 -->
@@ -336,13 +337,13 @@
                             <img loading="lazy" decoding="async" src="images/kedifilesiantalya.webp" srcset="images/kedifilesiantalya-480.webp 480w, images/kedifilesiantalya-768.webp 768w, images/kedifilesiantalya.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Kedi & Evcil Hayvan Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
-                        <h3 class="text-2xl font-bold font-heading text-oxford-blue dark:text-moonlight">Kedi & Evcil Hayvan Filesi</h3>
+                        <h3 class="text-2xl font-bold font-heading text-oxford-blue theme-text">Kedi & Evcil Hayvan Filesi</h3>
                         <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">Dostlarınızın pencere ve balkonlardan güvenle etrafı izlemesi için yırtılmaz, dayanıklı ipler.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('kedi')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Kedi & Evcil Hayvan Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
+                        <button onclick="showProductDetails('kedi')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
+                        <button onclick="quickAdd('Kedi & Evcil Hayvan Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Ürün 3 -->
@@ -352,13 +353,13 @@
                             <img loading="lazy" decoding="async" src="images/insaatt.webp" srcset="images/insaatt-480.webp 480w, images/insaatt-768.webp 768w, images/insaatt.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="İnşaat Güvenlik Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
-                        <h3 class="text-2xl font-bold font-heading text-oxford-blue dark:text-moonlight">İnşaat Güvenlik Filesi</h3>
+                        <h3 class="text-2xl font-bold font-heading text-oxford-blue theme-text">İnşaat Güvenlik Filesi</h3>
                         <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">Şantiyelerde iş güvenliği standartlarına uygun, düşmeyi önleyici ağır hizmet tipi ağlar.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('insaat')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('İnşaat Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
+                        <button onclick="showProductDetails('insaat')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
+                        <button onclick="quickAdd('İnşaat Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Ürün 4 -->
@@ -368,13 +369,13 @@
                             <img loading="lazy" decoding="async" src="images/rafkoruma.webp" srcset="images/rafkoruma-480.webp 480w, images/rafkoruma-768.webp 768w, images/rafkoruma.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Raf Koruma Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
-                        <h3 class="text-2xl font-bold font-heading text-oxford-blue dark:text-moonlight">Raf Koruma Filesi</h3>
+                        <h3 class="text-2xl font-bold font-heading text-oxford-blue theme-text">Raf Koruma Filesi</h3>
                         <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">Depo ve raf sistemlerinde ürün düşmesini engelleyen, dayanıklı koruma fileleri.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('rafkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Raf Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
+                        <button onclick="showProductDetails('rafkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
+                        <button onclick="quickAdd('Raf Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
                     </div>
                 </div>
                 <!-- Ürün 5 -->
@@ -384,19 +385,19 @@
                             <img loading="lazy" decoding="async" src="images/havuzkoruma.webp" srcset="images/havuzkoruma-480.webp 480w, images/havuzkoruma-768.webp 768w, images/havuzkoruma.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Havuz Koruma Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
-                        <h3 class="text-2xl font-bold font-heading text-oxford-blue dark:text-moonlight">Havuz Koruma Filesi</h3>
+                        <h3 class="text-2xl font-bold font-heading text-oxford-blue theme-text">Havuz Koruma Filesi</h3>
                         <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">Havuz güvenliği için çocuk ve evcil hayvan koruması sağlayan dayanıklı fileler.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
                     <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('havuzkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>
-                        <button onclick="quickAdd('Havuz Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>
+                        <button onclick="showProductDetails('havuzkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
+                        <button onclick="quickAdd('Havuz Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-6">
-                <a href="urunlerimiz.html" class="rounded-full bg-storm px-8 py-3 text-sm font-semibold text-moonlight hover:bg-steel transition inline-block">Tüm Ürün Kataloğunu Keşfet</a>
+                <a href="urunlerimiz.html" class="rounded-full bg-storm px-8 py-3 text-sm font-semibold theme-text hover:bg-steel transition inline-block">Tüm Ürün Kataloğunu Keşfet</a>
             </div>
 
             <!-- SEO ürün sayfaları (arama motorları için, kullanıcı arayüzünde gizli) -->
@@ -419,8 +420,8 @@
             <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto dark:bg-dark-card">
                 <div class="p-6">
                     <div class="flex justify-between items-start mb-4">
-                        <h3 id="modal-title" class="text-2xl font-bold font-heading text-oxford-blue dark:text-moonlight">Ürün Detayları</h3>
-                        <button onclick="closeProductModal()" class="text-steel hover:text-oxford-blue dark:text-frost-blue dark:hover:text-moonlight">
+                        <h3 id="modal-title" class="text-2xl font-bold font-heading text-oxford-blue theme-text">Ürün Detayları</h3>
+                        <button onclick="closeProductModal()" class="text-steel hover:text-oxford-blue dark:text-frost-blue moonlight-hover">
                             <i data-lucide="x" class="h-6 w-6"></i>
                         </button>
                     </div>
@@ -428,8 +429,8 @@
                         <!-- Dinamik içerik buraya gelecek -->
                     </div>
                     <div class="mt-6 flex gap-3">
-                        <button onclick="closeProductModal()" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-bg dark:border-dark-border dark:text-moonlight">Kapat</button>
-                        <button id="modal-add-to-cart" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">Teklif Al</button>
+                        <button onclick="closeProductModal()" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-bg dark:border-dark-border theme-text">Kapat</button>
+                        <button id="modal-add-to-cart" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">Teklif Al</button>
                     </div>
                 </div>
             </div>
@@ -447,7 +448,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="bg-storm text-frost-blue dark:bg-oxford-blue dark:text-moonlight">
+    <footer class="bg-storm text-frost-blue dark:bg-oxford-blue theme-text">
         <div class="mx-auto max-w-7xl px-6 py-6 lg:px-8">
             <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <!-- Firma Bilgileri -->
@@ -555,7 +556,7 @@
                 content: `
                     <div class="grid gap-4">
                         <div class="rounded-xl bg-moonlight/30 p-4 dark:bg-dark-bg">
-                            <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Teknik Özellikler</h4>
+                            <h4 class="font-bold text-oxford-blue mb-2 theme-text">Teknik Özellikler</h4>
                             <ul class="text-sm text-steel/90 space-y-1 dark:text-frost-blue/90">
                                 <li>• Gözenek aralığı: 10x10 cm</li>
                                 <li>• İp kalınlığı: 3mm</li>
@@ -565,11 +566,11 @@
                             </ul>
                         </div>
                         <div class="rounded-xl bg-moonlight/30 p-4 dark:bg-dark-bg">
-                            <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Kullanım Alanları</h4>
+                            <h4 class="font-bold text-oxford-blue mb-2 theme-text">Kullanım Alanları</h4>
                             <p class="text-sm text-steel/90 dark:text-frost-blue/90">Yüksek katlı balkonlar, teraslar, çocuk oyun alanları</p>
                         </div>
                         <div class="rounded-xl bg-moonlight/30 p-4 dark:bg-dark-bg">
-                            <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Montaj Bilgisi</h4>
+                            <h4 class="font-bold text-oxford-blue mb-2 theme-text">Montaj Bilgisi</h4>
                             <p class="text-sm text-steel/90 dark:text-frost-blue/90">Profesyonel ekip tarafından 1-2 gün içinde montaj</p>
                         </div>
                     </div>
@@ -581,7 +582,7 @@
                 content: `
                     <div class="grid gap-4">
                         <div class="rounded-xl bg-moonlight/30 p-4 dark:bg-dark-bg">
-                            <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Teknik Özellikler</h4>
+                            <h4 class="font-bold text-oxford-blue mb-2 theme-text">Teknik Özellikler</h4>
                             <ul class="text-sm text-steel/90 space-y-1 dark:text-frost-blue/90">
                                 <li>• Gözenek aralığı: 5x5 cm</li>
                                 <li>• İp kalınlığı: 2mm</li>
@@ -591,7 +592,7 @@
                             </ul>
                         </div>
                         <div class="rounded-xl bg-moonlight/30 p-4 dark:bg-dark-bg">
-                            <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Özellikler</h4>
+                            <h4 class="font-bold text-oxford-blue mb-2 theme-text">Özellikler</h4>
                             <p class="text-sm text-steel/90 dark:text-frost-blue/90">Kedi tırnağına ve ısırmasına dayanıklı, yırtılmaz yapı</p>
                         </div>
                     </div>
@@ -603,7 +604,7 @@
                 content: `
                     <div class="grid gap-4">
                         <div class="rounded-xl bg-moonlight/30 p-4 dark:bg-dark-bg">
-                            <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Teknik Özellikler</h4>
+                            <h4 class="font-bold text-oxford-blue mb-2 theme-text">Teknik Özellikler</h4>
                             <ul class="text-sm text-steel/90 space-y-1 dark:text-frost-blue/90">
                                 <li>• Gözenek aralığı: 10x10 cm</li>
                                 <li>• İp kalınlığı: 5mm</li>
@@ -613,7 +614,7 @@
                             </ul>
                         </div>
                         <div class="rounded-xl bg-moonlight/30 p-4 dark:bg-dark-bg">
-                            <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Standartlar</h4>
+                            <h4 class="font-bold text-oxford-blue mb-2 theme-text">Standartlar</h4>
                             <p class="text-sm text-steel/90 dark:text-frost-blue/90">TS EN 1263-1 standartlarına tam uyumlu</p>
                         </div>
                     </div>
@@ -655,7 +656,7 @@
                 content: `
                     <div class="rounded-xl bg-moonlight/30 p-4 dark:bg-dark-bg">
                         <img loading="lazy" decoding="async" src="${image}" srcset="${buildResponsiveSrcset(image)}" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="${title}" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h4 class="font-bold text-oxford-blue mb-2 dark:text-moonlight">Teknik Özellikler</h4>
+                        <h4 class="font-bold text-oxford-blue mb-2 theme-text">Teknik Özellikler</h4>
                         <ul class="text-sm text-steel/90 space-y-1 dark:text-frost-blue/90">
                             <li>• Göz aralığı: ${mesh}</li>
                             <li>• İp kalınlığı: ${thickness}</li>
@@ -745,7 +746,7 @@
                 <i data-lucide="cookie" class="h-5 w-5"></i>
             </span>
             <div>
-                <h2 id="cookie-banner-title" class="font-heading text-base font-bold text-oxford-blue dark:text-moonlight">Çerez tercihleri</h2>
+                <h2 id="cookie-banner-title" class="font-heading text-base font-bold text-oxford-blue theme-text">Çerez tercihleri</h2>
                 <p class="mt-1 text-sm leading-5 text-steel dark:text-frost-blue/80">
                     Daha iyi bir deneyim ve reklam ölçümü için çerez kullanıyoruz.
                     <a href="cerez-politikasi.html" class="font-semibold text-storm underline decoration-storm/40 underline-offset-2 hover:text-steel dark:text-frost-blue">Detayları incele</a>
@@ -753,10 +754,10 @@
             </div>
         </div>
         <div class="mt-5 flex flex-col-reverse items-center justify-center gap-2 sm:flex-row">
-            <button onclick="rejectCookies()" class="min-w-28 rounded-xl border border-steel/30 px-4 py-2.5 text-center text-sm font-semibold text-oxford-blue transition hover:bg-moonlight dark:border-dark-border dark:text-moonlight dark:hover:bg-dark-bg">
+            <button onclick="rejectCookies()" class="min-w-28 rounded-xl border border-steel/30 px-4 py-2.5 text-center text-sm font-semibold text-oxford-blue transition hover:bg-moonlight dark:border-dark-border theme-text dark:hover:bg-dark-bg">
                 Reddet
             </button>
-            <button onclick="acceptCookies()" class="min-w-28 rounded-xl bg-storm px-5 py-2.5 text-center text-sm font-bold text-moonlight shadow-sm transition hover:bg-steel">
+            <button onclick="acceptCookies()" class="min-w-28 rounded-xl bg-storm px-5 py-2.5 text-center text-sm font-bold theme-text shadow-sm transition hover:bg-steel">
                 Kabul Et
             </button>
         </div>

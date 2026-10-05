@@ -77,10 +77,10 @@
         if (history.scrollRestoration) { history.scrollRestoration = 'manual'; }
         window.scrollTo(0, 0);
     </script>
-    <link rel="stylesheet" href="assets/premium.css?v=20261005-v2e">
+    <link rel="stylesheet" href="assets/premium.css?v=20261005-moonlight2">
     <script defer src="assets/premium.js?v=20261005-card-fix3"></script>
 </head>
-<body class="min-h-screen bg-moonlight text-oxford-blue font-sans dark:bg-dark-bg dark:text-moonlight flex flex-col pt-16 overflow-x-hidden premium-site">
+<body class="min-h-screen bg-moonlight text-oxford-blue font-sans dark:bg-dark-bg theme-text flex flex-col pt-16 overflow-x-hidden premium-site">
 
 <header id="site-header" class="fixed top-0 left-0 w-full z-50 h-16 border-b border-steel/20 dark:border-dark-border transition-all duration-300">
     <div class="mx-auto flex max-w-7xl h-full items-center justify-between px-6 lg:px-8">
@@ -91,67 +91,67 @@
             </div>
             <div class="min-w-0">
                 <p class="text-sm uppercase tracking-[0.2em] text-steel font-bold m-0 leading-none dark:text-frost-blue">NETFİLE</p>
-                <span class="block whitespace-nowrap text-base font-bold text-oxford-blue font-heading dark:text-moonlight sm:text-xl">file & ağ sistemleri</span>
+                <span class="block whitespace-nowrap text-base font-bold text-oxford-blue font-heading theme-text sm:text-xl">file & ağ sistemleri</span>
             </div>
         </a>
         
         <nav class="hidden items-center gap-8 text-sm font-semibold lg:flex">
-            <a href="index.html" class="nav-link text-oxford-blue hover:text-steel dark:text-moonlight dark:hover:text-frost-blue">Ana Sayfa</a>
-            <a href="hakkimizda.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Hakkımızda</a>
-            <a href="urunlerimiz.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Ürünlerimiz</a>
-            <a href="galeri.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Galeri</a>
-            <a href="teklif.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">Teklif & Sipariş</a>
-            <a href="iletisim.html" class="nav-link text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue">İletişim</a>
+            <a href="index.html" class="nav-link text-oxford-blue hover:text-steel theme-text dark:hover:text-frost-blue">Ana Sayfa</a>
+            <a href="hakkimizda.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Hakkımızda</a>
+            <a href="urunlerimiz.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Ürünlerimiz</a>
+            <a href="galeri.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Galeri</a>
+            <a href="teklif.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">Teklif & Sipariş</a>
+            <a href="iletisim.html" class="nav-link text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue">İletişim</a>
         </nav>
 
         <div class="hidden lg:flex items-center gap-4">
-            <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2.5 text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border dark:text-moonlight dark:hover:border-frost-blue">
+            <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2.5 text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border theme-text dark:hover:border-frost-blue">
                 <i data-lucide="moon" class="h-5 w-5 dark:hidden"></i>
                 <i data-lucide="sun" class="h-5 w-5 hidden dark:block"></i>
             </button>
             <div class="relative" id="cart-widget">
-                <button type="button" id="cart-toggle" class="inline-flex items-center gap-2 rounded-full border border-steel/30 bg-white/50 px-4 py-2 text-sm font-bold text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border dark:text-moonlight">
+                <button type="button" id="cart-toggle" class="inline-flex items-center gap-2 rounded-full border border-steel/30 bg-white/50 px-4 py-2 text-sm font-bold text-oxford-blue hover:border-storm dark:bg-dark-card dark:border-dark-border theme-text">
                     <i data-lucide="clipboard-list" class="h-4 w-4 text-steel dark:text-frost-blue"></i>
                     <span id="cart-count">0</span>
                 </button>
                 <div id="cart-dropdown" class="hidden absolute right-0 top-[calc(100%+8px)] w-80 rounded-2xl border border-steel/20 bg-white shadow-xl dark:bg-dark-card dark:border-dark-border z-50 overflow-hidden">
                     <div class="px-4 py-3 border-b border-steel/10 dark:border-dark-border">
-                        <p class="text-sm font-bold text-oxford-blue dark:text-moonlight">Teklif Listeniz</p>
+                        <p class="text-sm font-bold text-oxford-blue theme-text">Teklif Listeniz</p>
                     </div>
                     <div id="cart-dropdown-items" class="max-h-60 overflow-y-auto px-2 py-2"></div>
                     <div class="px-3 py-3 border-t border-steel/10 dark:border-dark-border">
-                        <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-4 py-2 text-sm font-semibold text-moonlight hover:bg-steel transition">Teklif Sayfasına Git</a>
+                        <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-4 py-2 text-sm font-semibold theme-text hover:bg-steel transition">Teklif Sayfasına Git</a>
                     </div>
                 </div>
             </div>
-            <a href="teklif.html" class="rounded-full bg-storm px-6 py-2.5 text-sm font-semibold text-moonlight shadow-md hover:bg-steel font-heading">Teklif İste</a>
+            <a href="teklif.html" class="rounded-full bg-storm px-6 py-2.5 text-sm font-semibold theme-text shadow-md hover:bg-steel font-heading">Teklif İste</a>
         </div>
 
         <div class="flex items-center gap-2 lg:hidden">
-            <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2 text-oxford-blue dark:bg-dark-card dark:border-dark-border dark:text-moonlight">
+            <button onclick="toggleDarkMode()" class="inline-flex items-center justify-center rounded-full border border-steel/30 bg-white/50 p-2 text-oxford-blue dark:bg-dark-card dark:border-dark-border theme-text">
                 <i data-lucide="moon" class="h-4 w-4 dark:hidden"></i>
                 <i data-lucide="sun" class="h-4 w-4 hidden dark:block"></i>
             </button>
-            <button type="button" id="mobile-menu-button" class="text-oxford-blue dark:text-moonlight hover:text-steel p-2">
+            <button type="button" id="mobile-menu-button" class="text-oxford-blue theme-text hover:text-steel p-2">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </div>
     </div>
 
     <div id="mobile-menu" class="hidden lg:hidden border-t border-steel/10 bg-moonlight dark:bg-dark-bg px-6 py-4 space-y-3">
-        <a href="index.html" class="block text-oxford-blue hover:text-steel dark:text-moonlight dark:hover:text-frost-blue py-2">Ana Sayfa</a>
-        <a href="hakkimizda.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Hakkımızda</a>
-        <a href="urunlerimiz.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Ürünlerimiz</a>
-        <a href="galeri.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Galeri</a>
-        <a href="teklif.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">Teklif & Sipariş</a>
-        <a href="iletisim.html" class="block text-oxford-blue/80 hover:text-steel dark:text-moonlight/80 dark:hover:text-frost-blue py-2">İletişim</a>
-        <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-6 py-3 text-sm font-semibold text-moonlight shadow-md hover:bg-steel font-heading mt-2">Teklif İste</a>
+        <a href="index.html" class="block text-oxford-blue hover:text-steel theme-text dark:hover:text-frost-blue py-2">Ana Sayfa</a>
+        <a href="hakkimizda.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Hakkımızda</a>
+        <a href="urunlerimiz.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Ürünlerimiz</a>
+        <a href="galeri.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Galeri</a>
+        <a href="teklif.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">Teklif & Sipariş</a>
+        <a href="iletisim.html" class="block text-oxford-blue/80 hover:text-steel theme-text-80 dark:hover:text-frost-blue py-2">İletişim</a>
+        <a href="teklif.html" class="block w-full text-center rounded-full bg-storm px-6 py-3 text-sm font-semibold theme-text shadow-md hover:bg-steel font-heading mt-2">Teklif İste</a>
     </div>
 </header>
 
 <main class="flex-grow">
     <!-- HERO BÖLÜMÜ -->
-    <section class="relative h-[500px] w-full overflow-hidden bg-storm text-moonlight">
+    <section class="relative h-[500px] w-full overflow-hidden bg-storm theme-text premium-image-hero">
         <div class="absolute inset-0 w-full h-full">
             <img loading="eager" fetchpriority="high" decoding="async" src="images/kusfilesi.webp" srcset="images/kusfilesi-480.webp 480w, images/kusfilesi-768.webp 768w, images/kusfilesi.webp 1200w"  sizes="100vw" alt="Antalya Kuş Engelleme Filesi" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-oxford-blue/70"></div>
@@ -162,7 +162,7 @@
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading tracking-tight leading-tight text-white drop-shadow-lg">
                     Antalya Kuş Engelleme Filesi Sistemleri
                 </h1>
-                <p class="text-moonlight/90 text-lg max-w-2xl mx-auto font-medium">
+                <p class="theme-text-90 text-lg max-w-2xl mx-auto font-medium">
                     Balkon, çatı, fabrika ve depo alanları için profesyonel kuş koruma ağı montaj hizmetleri. Güvercin ve diğer kuşlardan kurtulun.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -176,7 +176,7 @@
     <!-- GİRİŞ BÖLÜMÜ -->
     <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-oxford-blue font-heading mb-6 dark:text-moonlight">Antalya Kuş Engelleme Filesi ile Temiz Alanlar</h2>
+            <h2 class="text-3xl font-bold text-oxford-blue font-heading mb-6 theme-text">Antalya Kuş Engelleme Filesi ile Temiz Alanlar</h2>
             <p class="text-steel/90 leading-relaxed mb-6 dark:text-frost-blue/90 text-lg">
                 Kuşlar özellikle güvercinler balkonlar, çatılar, teraslar ve ticari alanlarda ciddi problemler oluşturabilir. Netfile olarak Antalya genelinde kuş engelleme filesi ve güvercin önleme filesi montajı hizmeti sunuyoruz. Hem bireysel hem kurumsal müşterilerimiz için etkili kuş koruma çözümleri geliştiriyoruz.
             </p>
@@ -192,7 +192,7 @@
     <!-- AVANTAJLAR BÖLÜMÜ -->
     <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8 bg-white/30 dark:bg-dark-card/30">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-oxford-blue font-heading dark:text-moonlight">Kuş Engelleme Filesi Avantajları</h2>
+            <h2 class="text-3xl font-bold text-oxford-blue font-heading theme-text">Kuş Engelleme Filesi Avantajları</h2>
             <p class="text-steel/80 mt-2 dark:text-frost-blue/80">Neden Netfile kuş filelerini tercih etmelisiniz?</p>
         </div>
 
@@ -201,7 +201,7 @@
                 <div class="w-12 h-12 bg-frost-blue/20 rounded-xl flex items-center justify-center text-steel mb-4">
                     <i data-lucide="shield-check" class="h-6 w-6"></i>
                 </div>
-                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 dark:text-moonlight">Etkili Koruma</h3>
+                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 theme-text">Etkili Koruma</h3>
                 <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                     Kuşların giriş alanlarını tamamen engeller. Güvercin ve diğer kuş türleri için %100 etkili koruma sağlar.
                 </p>
@@ -211,7 +211,7 @@
                 <div class="w-12 h-12 bg-frost-blue/20 rounded-xl flex items-center justify-center text-steel mb-4">
                     <i data-lucide="droplets" class="h-6 w-6"></i>
                 </div>
-                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 dark:text-moonlight">Pislik Önler</h3>
+                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 theme-text">Pislik Önler</h3>
                 <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                     Kuş pisliği sorununu tamamen ortadan kaldırır. Balkonlar, çatılar ve ticari alanları temiz tutar.
                 </p>
@@ -221,7 +221,7 @@
                 <div class="w-12 h-12 bg-frost-blue/20 rounded-xl flex items-center justify-center text-steel mb-4">
                     <i data-lucide="volume-x" class="h-6 w-6"></i>
                 </div>
-                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 dark:text-moonlight">Gürültü Azaltır</h3>
+                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 theme-text">Gürültü Azaltır</h3>
                 <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                     Kuşların yarattığı gürültüyü azaltır. Özellikle sabahları ve akşamları huzurlu bir ortam sağlar.
                 </p>
@@ -231,7 +231,7 @@
                 <div class="w-12 h-12 bg-frost-blue/20 rounded-xl flex items-center justify-center text-steel mb-4">
                     <i data-lucide="palette" class="h-6 w-6"></i>
                 </div>
-                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 dark:text-moonlight">Estetik Görünüm</h3>
+                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 theme-text">Estetik Görünüm</h3>
                 <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                     Bina ve yapı estetiğini bozmaz. Şeffaf ve minimalist tasarım ile görünmez koruma sağlar.
                 </p>
@@ -241,7 +241,7 @@
                 <div class="w-12 h-12 bg-frost-blue/20 rounded-xl flex items-center justify-center text-steel mb-4">
                     <i data-lucide="sun" class="h-6 w-6"></i>
                 </div>
-                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 dark:text-moonlight">UV Dayanıklı</h3>
+                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 theme-text">UV Dayanıklı</h3>
                 <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                     Antalya güneşine uygun üretim. UV katkılı hammaddeler güneş ışığına karşı koruma sağlar.
                 </p>
@@ -251,7 +251,7 @@
                 <div class="w-12 h-12 bg-frost-blue/20 rounded-xl flex items-center justify-center text-steel mb-4">
                     <i data-lucide="wrench" class="h-6 w-6"></i>
                 </div>
-                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 dark:text-moonlight">Profesyonel Montaj</h3>
+                <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 theme-text">Profesyonel Montaj</h3>
                 <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                     Her alan için özel montaj teknikleri. Çatı, balkon, fabrika ve depo alanlarına uygun çözümler.
                 </p>
@@ -262,32 +262,32 @@
     <!-- UYGULAMA ALANLARI BÖLÜMÜ -->
     <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-oxford-blue font-heading mb-6 dark:text-moonlight">Kuş Filesi Uygulama Alanları</h2>
+            <h2 class="text-3xl font-bold text-oxford-blue font-heading mb-6 theme-text">Kuş Filesi Uygulama Alanları</h2>
             
             <div class="space-y-6">
                 <div class="rounded-2xl border border-steel/15 bg-white/50 p-6 dark:bg-dark-card/50 dark:border-dark-border">
-                    <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 dark:text-moonlight">Balkon ve Teraslar</h3>
+                    <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 theme-text">Balkon ve Teraslar</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         Apartman balkonlarında ve teraslarda güvercinlerin konmasını engeller. Kuş pisliği sorununu ortadan kaldırır, manzaranın keyfini çıkarmanızı sağlar.
                     </p>
                 </div>
 
                 <div class="rounded-2xl border border-steel/15 bg-white/50 p-6 dark:bg-dark-card/50 dark:border-dark-border">
-                    <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 dark:text-moonlight">Çatı ve Sahanlıklar</h3>
+                    <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 theme-text">Çatı ve Sahanlıklar</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         Bina çatılarında ve sahanlıklarında kuş yuvalamasını engeller. Yapısal hasarı önler, temizlik maliyetlerini azaltır.
                     </p>
                 </div>
 
                 <div class="rounded-2xl border border-steel/15 bg-white/50 p-6 dark:bg-dark-card/50 dark:border-dark-border">
-                    <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 dark:text-moonlight">Fabrika ve Depolar</h3>
+                    <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 theme-text">Fabrika ve Depolar</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         Endüstriyel alanlarda kuşların girmesini engeller. Hijyen standartlarını korur, ürün koruması sağlar.
                     </p>
                 </div>
 
                 <div class="rounded-2xl border border-steel/15 bg-white/50 p-6 dark:bg-dark-card/50 dark:border-dark-border">
-                    <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 dark:text-moonlight">AVM ve Ticari Alanlar</h3>
+                    <h3 class="text-xl font-bold font-heading text-oxford-blue mb-3 theme-text">AVM ve Ticari Alanlar</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         Alışveriş merkezleri ve ticari alanlarda estetik ve hijyenik koruma sağlar. Müşteri deneyimini iyileştirir.
                     </p>
@@ -299,16 +299,16 @@
     <!-- MONTAJ SÜRECİ BÖLÜMÜ -->
     <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8 bg-gradient-to-br from-frost-blue/10 to-steel/10 dark:from-frost-blue/5 dark:to-steel/5">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-oxford-blue font-heading dark:text-moonlight">Kuş Filesi Montaj Süreci</h2>
+            <h2 class="text-3xl font-bold text-oxford-blue font-heading theme-text">Kuş Filesi Montaj Süreci</h2>
             <p class="text-steel/80 mt-2 dark:text-frost-blue/80">Profesyonel ve sorunsuz montaj deneyimi</p>
         </div>
 
         <div class="max-w-4xl mx-auto">
             <div class="grid gap-6 md:grid-cols-2">
                 <div class="flex gap-4">
-                    <div class="flex-shrink-0 w-10 h-10 bg-storm rounded-full flex items-center justify-center text-moonlight font-bold">1</div>
+                    <div class="flex-shrink-0 w-10 h-10 bg-storm rounded-full flex items-center justify-center theme-text font-bold">1</div>
                     <div>
-                        <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Ücretsiz Keşif</h3>
+                        <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 theme-text">Ücretsiz Keşif</h3>
                         <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                             Antalya'nın tüm ilçelerinde ücretsiz yerinde keşif hizmeti. Alanın durumunu analiz ediyor, ihtiyaçları belirliyoruz.
                         </p>
@@ -316,9 +316,9 @@
                 </div>
 
                 <div class="flex gap-4">
-                    <div class="flex-shrink-0 w-10 h-10 bg-storm rounded-full flex items-center justify-center text-moonlight font-bold">2</div>
+                    <div class="flex-shrink-0 w-10 h-10 bg-storm rounded-full flex items-center justify-center theme-text font-bold">2</div>
                     <div>
-                        <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Özel Tasarım</h3>
+                        <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 theme-text">Özel Tasarım</h3>
                         <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                             Alanın özelliklerine göre özel kuş filesi tasarımı. Balkon, çatı veya endüstriyel çözümler.
                         </p>
@@ -326,9 +326,9 @@
                 </div>
 
                 <div class="flex gap-4">
-                    <div class="flex-shrink-0 w-10 h-10 bg-storm rounded-full flex items-center justify-center text-moonlight font-bold">3</div>
+                    <div class="flex-shrink-0 w-10 h-10 bg-storm rounded-full flex items-center justify-center theme-text font-bold">3</div>
                     <div>
-                        <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Üretim</h3>
+                        <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 theme-text">Üretim</h3>
                         <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                             Antalya üretim tesislerimizde özel ölçülerinize göre kuş filesi üretimi. Kalite kontrol süreçleri.
                         </p>
@@ -336,9 +336,9 @@
                 </div>
 
                 <div class="flex gap-4">
-                    <div class="flex-shrink-0 w-10 h-10 bg-storm rounded-full flex items-center justify-center text-moonlight font-bold">4</div>
+                    <div class="flex-shrink-0 w-10 h-10 bg-storm rounded-full flex items-center justify-center theme-text font-bold">4</div>
                     <div>
-                        <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Profesyonel Montaj</h3>
+                        <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 theme-text">Profesyonel Montaj</h3>
                         <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                             Uzman ekibimizle alana kusursuz montaj. Temiz ve düzenli çalışma, iş teslimi.
                         </p>
@@ -351,39 +351,39 @@
     <!-- SIK SORULAN SORULAR BÖLÜMÜ -->
     <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-oxford-blue font-heading mb-8 dark:text-moonlight">Sık Sorulan Sorular</h2>
+            <h2 class="text-3xl font-bold text-oxford-blue font-heading mb-8 theme-text">Sık Sorulan Sorular</h2>
 
             <div class="space-y-4">
                 <div class="rounded-2xl border border-steel/15 bg-white/50 dark:bg-dark-card/50 dark:border-dark-border">
-                    <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Kuş filesi kuşlara zarar verir mi?</h3>
+                    <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 theme-text">Kuş filesi kuşlara zarar verir mi?</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         Hayır, kuş fileleri kuşlara zarar vermez. Sadece giriş alanlarını engeller, kuşların başka alanlara gitmesini sağlar. Çevre dostu ve etik bir çözümdür.
                     </p>
                 </div>
 
                 <div class="rounded-2xl border border-steel/15 bg-white/50 dark:bg-dark-card/50 dark:border-dark-border">
-                    <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Hangi kuş türleri için etkilidir?</h3>
+                    <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 theme-text">Hangi kuş türleri için etkilidir?</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         Özellikle güvercinler için çok etkilidir. Ayrıca serçe, martı ve diğer yerleşik kuş türleri için de koruma sağlar.
                     </p>
                 </div>
 
                 <div class="rounded-2xl border border-steel/15 bg-white/50 dark:bg-dark-card/50 dark:border-dark-border">
-                    <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Görüş açısını kapatır mı?</h3>
+                    <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 theme-text">Görüş açısını kapatır mı?</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         Hayır, kuş filelerimiz şeffaf ve minimalist tasarıma sahiptir. Görüş açısını kapatmaz, estetik görünümü bozmaz.
                     </p>
                 </div>
 
                 <div class="rounded-2xl border border-steel/15 bg-white/50 dark:bg-dark-card/50 dark:border-dark-border">
-                    <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Ne kadar dayanır?</h3>
+                    <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 theme-text">Ne kadar dayanır?</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         Kuş filelerimiz 5-7 yıl boyunca dış mekan koşullarında dayanıklılığını korur. UV katkılı hammaddeler güneş ışığına karşı koruma sağlar.
                     </p>
                 </div>
 
                 <div class="rounded-2xl border border-steel/15 bg-white/50 dark:bg-dark-card/50 dark:border-dark-border">
-                    <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 dark:text-moonlight">Bakım gerektirir mi?</h3>
+                    <h3 class="text-lg font-bold font-heading text-oxford-blue mb-2 theme-text">Bakım gerektirir mi?</h3>
                     <p class="text-steel/90 leading-relaxed dark:text-frost-blue/90">
                         Minimal bakım gerektirir. Düzenli olarak temizlenmesi ve durumunun kontrol edilmesi yeterlidir. Uzun ömürlü kullanım sağlar.
                     </p>
@@ -395,7 +395,7 @@
     <!-- ANTALYA YEREL SEO BÖLÜMÜ -->
     <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8 bg-white/30 dark:bg-dark-card/30">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-oxford-blue font-heading mb-6 dark:text-moonlight">Antalya Hizmet Bölgelerimiz</h2>
+            <h2 class="text-3xl font-bold text-oxford-blue font-heading mb-6 theme-text">Antalya Hizmet Bölgelerimiz</h2>
             <p class="text-steel/90 leading-relaxed mb-6 dark:text-frost-blue/90 text-lg">
                 Kepez, Muratpaşa, Konyaaltı, Lara, Döşemealtı, Aksu ve Antalya'nın tüm ilçelerinde kuş engelleme filesi montaj hizmeti sunuyoruz. Hem bireysel hem kurumsal müşterilerimiz için profesyonel çözümler getiriyoruz.
             </p>
@@ -411,10 +411,10 @@
     </section>
 
     <!-- CTA BÖLÜMÜ -->
-    <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8 bg-storm text-moonlight">
+    <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8 bg-storm theme-text">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-3xl font-bold font-heading mb-4">Kuşlardan Kurtulun, Temiz Alanlar Oluşturun</h2>
-            <p class="text-moonlight/90 text-lg mb-8">
+            <p class="theme-text-90 text-lg mb-8">
                 Ücretsiz keşif ve fiyat teklifi almak için hemen bizimle iletişime geçin. Profesyonel kuş engelleme çözümleri ile alanlarınızı koruyun.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -427,7 +427,7 @@
     <!-- İÇ LİNKLER BÖLÜMÜ -->
     <section class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <h3 class="text-xl font-bold font-heading text-oxford-blue mb-4 dark:text-moonlight">Diğer Ürünlerimiz</h3>
+            <h3 class="text-xl font-bold font-heading text-oxford-blue mb-4 theme-text">Diğer Ürünlerimiz</h3>
             <div class="flex flex-wrap gap-4">
                 <a href="balkon-filesi.html" class="px-4 py-2 bg-steel/10 rounded-full text-sm font-semibold text-steel hover:bg-steel/20 transition dark:bg-frost-blue/10 dark:text-frost-blue dark:hover:bg-frost-blue/20">Balkon Güvenlik Filesi</a>
                 <a href="kedi-filesi.html" class="px-4 py-2 bg-steel/10 rounded-full text-sm font-semibold text-steel hover:bg-steel/20 transition dark:bg-frost-blue/10 dark:text-frost-blue dark:hover:bg-frost-blue/20">Kedi Filesi</a>
@@ -452,7 +452,7 @@
 </div>
 
 <!-- FOOTER -->
-<footer class="bg-storm text-frost-blue dark:bg-oxford-blue dark:text-moonlight">
+<footer class="bg-storm text-frost-blue dark:bg-oxford-blue theme-text">
     <div class="mx-auto max-w-7xl px-6 py-6 lg:px-8">
         <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div>
@@ -508,7 +508,7 @@
 <!-- ÇEREZ BANNER -->
 <div id="cookie-banner" class="hidden">
     <div class="bg-white dark:bg-dark-card border border-steel/20 dark:border-dark-border rounded-2xl shadow-2xl p-5 relative">
-        <button onclick="closeCookieBanner()" aria-label="Çerez bildirimini kapat" class="absolute top-3 right-3 text-steel hover:text-oxford-blue dark:text-frost-blue/60 dark:hover:text-moonlight transition">
+        <button onclick="closeCookieBanner()" aria-label="Çerez bildirimini kapat" class="absolute top-3 right-3 text-steel hover:text-oxford-blue dark:text-frost-blue/60 moonlight-hover transition">
             <i data-lucide="x" class="h-4 w-4"></i>
         </button>
         <p class="text-sm text-steel/90 dark:text-frost-blue/90 pr-6 leading-relaxed">
@@ -516,10 +516,10 @@
             <a href="cerez-politikasi.html" class="text-storm dark:text-frost-blue underline hover:text-steel">Detaylı Bilgi</a>
         </p>
         <div class="flex gap-2 mt-4">
-            <button onclick="acceptCookies()" class="flex-1 rounded-full bg-storm px-4 py-2 text-sm font-semibold text-moonlight hover:bg-steel transition">
+            <button onclick="acceptCookies()" class="flex-1 rounded-full bg-storm px-4 py-2 text-sm font-semibold theme-text hover:bg-steel transition">
                 Kabul Et
             </button>
-            <button onclick="rejectCookies()" class="flex-1 rounded-full border border-steel/30 dark:border-dark-border px-4 py-2 text-sm font-semibold text-oxford-blue dark:text-moonlight hover:bg-steel/10 dark:hover:bg-dark-bg transition">
+            <button onclick="rejectCookies()" class="flex-1 rounded-full border border-steel/30 dark:border-dark-border px-4 py-2 text-sm font-semibold text-oxford-blue theme-text hover:bg-steel/10 dark:hover:bg-dark-bg transition">
                 Reddet
             </button>
         </div>
