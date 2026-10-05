@@ -623,10 +623,10 @@
                             </div>
                         </div>
                     </div>
-                    <button onclick="(function(){var track=document.getElementById('testimonial-track');...})()" class="absolute left-0...">
+                    <button onclick="prevTestimonial()" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white dark:bg-dark-card border border-steel/20 dark:border-dark-border rounded-full p-3 shadow-lg hover:bg-steel hover:text-white dark:hover:bg-storm dark:hover:text-white transition-all z-10 cursor-pointer">
     <i data-lucide="chevron-left" class="w-6 h-6"></i>
 </button>
-<button onclick="(function(){var track=document.getElementById('testimonial-track');...})()" class="absolute right-0...">
+<button onclick="nextTestimonial()" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white dark:bg-dark-card border border-steel/20 dark:border-dark-border rounded-full p-3 shadow-lg hover:bg-steel hover:text-white dark:hover:bg-storm dark:hover:text-white transition-all z-10 cursor-pointer">
     <i data-lucide="chevron-right" class="w-6 h-6"></i>
 </button>
                 </div>
@@ -914,7 +914,7 @@
     <script>
         let currentTestimonial = 0;
         let testimonialsPerView = 3;
-        const totalTestimonials = 15;
+        let totalTestimonials = 0;
 
         // Testimonial Slider Functions (Global Scope)
         window.updateTestimonialSlider = function() {
@@ -923,6 +923,9 @@
                 console.log('Track element not found');
                 return;
             }
+            totalTestimonials = track.children.length;
+            const maxIndex = Math.max(0, totalTestimonials - testimonialsPerView);
+            currentTestimonial = Math.min(currentTestimonial, maxIndex);
             const itemWidth = 100 / testimonialsPerView;
             const translateX = -(currentTestimonial * itemWidth);
             console.log('Slider moved to:', currentTestimonial, 'translateX:', translateX + '%');
@@ -931,14 +934,14 @@
 
         window.nextTestimonial = function() {
             console.log('Next testimonial clicked');
-            const maxIndex = totalTestimonials - testimonialsPerView;
+            const maxIndex = Math.max(0, totalTestimonials - testimonialsPerView);
             currentTestimonial = currentTestimonial >= maxIndex ? 0 : currentTestimonial + 1;
             window.updateTestimonialSlider();
         }
 
         window.prevTestimonial = function() {
             console.log('Prev testimonial clicked');
-            const maxIndex = totalTestimonials - testimonialsPerView;
+            const maxIndex = Math.max(0, totalTestimonials - testimonialsPerView);
             currentTestimonial = currentTestimonial <= 0 ? maxIndex : currentTestimonial - 1;
             window.updateTestimonialSlider();
         }
@@ -1076,6 +1079,7 @@
                                 </div>`;
                             testimonialTrack.insertAdjacentHTML('afterbegin', kart);
                         });
+                        window.updateTestimonialSlider();
                         if (typeof lucide !== 'undefined') lucide.createIcons();
                     })
                     .catch(() => {});
