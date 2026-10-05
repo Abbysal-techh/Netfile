@@ -172,7 +172,7 @@
         }
         window.scrollTo(0, 0);
     </script>
-    <link rel="stylesheet" href="assets/premium.css?v=20261005-moonlight2">
+    <link rel="stylesheet" href="assets/premium.css?v=20261005-cardactions2">
     <script defer src="assets/premium.js?v=20261005-card-fix3"></script>
 </head>
 <body class="min-h-screen bg-moonlight text-oxford-blue font-sans dark:bg-dark-bg theme-text flex flex-col pt-16 overflow-x-hidden premium-site">
@@ -305,17 +305,17 @@
         <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
             <div class="mb-8 rounded-3xl border border-steel/15 bg-white/45 px-5 py-8 text-center shadow-sm sm:px-8 dark:border-dark-border dark:bg-dark-card/60">
                 <p class="text-sm uppercase tracking-[0.2em] text-steel font-bold dark:text-frost-blue">Hizmetlerimiz & Ürünler</p>
-                <h2 class="mt-2 text-3xl font-bold text-oxford-blue font-heading sm:text-4xl theme-text">Antalya Geneli Hizmet Alanlarımız</h2>
+                <h2 class="home-section-title mt-2 text-3xl font-bold text-oxford-blue font-heading sm:text-4xl theme-text">Antalya Geneli Hizmet Alanlarımız</h2>
                 <p class="mx-auto mt-2 max-w-2xl text-steel/80 dark:text-frost-blue/80">İhtiyacınıza en uygun, dayanıklı ve yüksek mukavemetli file çeşitlerimiz.</p>
                 <div class="mx-auto mt-8 max-w-3xl border-t border-steel/15 pt-6 dark:border-dark-border">
-                    <h3 class="text-3xl font-bold text-oxford-blue font-heading theme-text sm:text-4xl">Üreticisinden Teslimat</h3>
+                    <h3 class="delivery-title text-3xl font-bold text-oxford-blue font-heading theme-text sm:text-4xl">Üreticisinden Teslimat</h3>
                     <p class="mt-3 text-sm leading-relaxed text-steel/90 dark:text-frost-blue/90">Antalya üretim tesislerimizden doğrudan, aracı olmadan en uygun fiyatlarla projelerinize sevk. TS EN 1263-1 standartlarında test edilip onaylanmış, TSE belgeli ve güvenilir üretim.</p>
                 </div>
             </div>
 
             <div id="homepage-products" class="grid grid-cols-1 gap-5 overflow-x-hidden sm:grid-cols-2 lg:grid-cols-3">
                 <!-- Ürün 1 -->
-                <div class="rounded-3xl border border-steel/20 bg-white/60 p-6 flex flex-col justify-between shadow-sm dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white/60 p-6 flex flex-col shadow-sm dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-44 rounded-2xl mb-4 overflow-hidden relative group">
                             <img loading="lazy" decoding="async" src="images/cocukfilesiantalya.webp" srcset="images/cocukfilesiantalya-480.webp 480w, images/cocukfilesiantalya-768.webp 768w, images/cocukfilesiantalya.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Balkon Güvenlik Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -325,13 +325,10 @@
                         <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">Çocuklarınız ve aileniz için yüksek katlı balkonlarda tam koruma sağlayan özel montajlı ağlar.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('balkon')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('Balkon Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('balkon')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Balkon Güvenlik Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
                 <!-- Ürün 2 -->
-                <div class="rounded-3xl border border-steel/20 bg-white/60 p-6 flex flex-col justify-between shadow-sm dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white/60 p-6 flex flex-col shadow-sm dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-44 rounded-2xl mb-4 overflow-hidden relative group">
                             <img loading="lazy" decoding="async" src="images/kedifilesiantalya.webp" srcset="images/kedifilesiantalya-480.webp 480w, images/kedifilesiantalya-768.webp 768w, images/kedifilesiantalya.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Kedi & Evcil Hayvan Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -341,13 +338,10 @@
                         <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">Dostlarınızın pencere ve balkonlardan güvenle etrafı izlemesi için yırtılmaz, dayanıklı ipler.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('kedi')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('Kedi & Evcil Hayvan Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('kedi')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Kedi & Evcil Hayvan Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
                 <!-- Ürün 3 -->
-                <div class="rounded-3xl border border-steel/20 bg-white/60 p-6 flex flex-col justify-between shadow-sm dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white/60 p-6 flex flex-col shadow-sm dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-44 rounded-2xl mb-4 overflow-hidden relative group">
                             <img loading="lazy" decoding="async" src="images/insaatt.webp" srcset="images/insaatt-480.webp 480w, images/insaatt-768.webp 768w, images/insaatt.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="İnşaat Güvenlik Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -357,13 +351,10 @@
                         <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">Şantiyelerde iş güvenliği standartlarına uygun, düşmeyi önleyici ağır hizmet tipi ağlar.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('insaat')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('İnşaat Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('insaat')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('İnşaat Güvenlik Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
                 <!-- Ürün 4 -->
-                <div class="rounded-3xl border border-steel/20 bg-white/60 p-6 flex flex-col justify-between shadow-sm dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white/60 p-6 flex flex-col shadow-sm dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-44 rounded-2xl mb-4 overflow-hidden relative group">
                             <img loading="lazy" decoding="async" src="images/rafkoruma.webp" srcset="images/rafkoruma-480.webp 480w, images/rafkoruma-768.webp 768w, images/rafkoruma.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Raf Koruma Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -373,13 +364,10 @@
                         <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">Depo ve raf sistemlerinde ürün düşmesini engelleyen, dayanıklı koruma fileleri.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('rafkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('Raf Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('rafkoruma')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Raf Koruma Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
                 <!-- Ürün 5 -->
-                <div class="rounded-3xl border border-steel/20 bg-white/60 p-6 flex flex-col justify-between shadow-sm dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white/60 p-6 flex flex-col shadow-sm dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-44 rounded-2xl mb-4 overflow-hidden relative group">
                             <img loading="lazy" decoding="async" src="images/havuzkoruma.webp" srcset="images/havuzkoruma-480.webp 480w, images/havuzkoruma-768.webp 768w, images/havuzkoruma.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Havuz Koruma Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -389,10 +377,7 @@
                         <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">Havuz güvenliği için çocuk ve evcil hayvan koruması sağlayan dayanıklı fileler.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('havuzkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('Havuz Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('havuzkoruma')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Havuz Koruma Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
             </div>
             

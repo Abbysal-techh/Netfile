@@ -142,7 +142,7 @@
         }
         window.scrollTo(0, 0);
     </script>
-    <link rel="stylesheet" href="assets/premium.css?v=20261005-moonlight2">
+    <link rel="stylesheet" href="assets/premium.css?v=20261005-cardactions2">
     <script defer src="assets/premium.js?v=20261005-card-fix3"></script>
 </head>
 <body class="min-h-screen bg-moonlight text-oxford-blue font-sans dark:bg-dark-bg theme-text flex flex-col pt-16 overflow-x-hidden premium-site">
@@ -224,9 +224,9 @@
                 <p class="text-steel/80 mt-2 dark:text-frost-blue/80">Gereksinimlerinize uygun olarak hazırlanan profesyonel ağ çözümleri.</p>
             </div>
 
-            <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="premium-product-grid grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 <!-- Kart 1 -->
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg">
                         <img loading="lazy" decoding="async" src="images/balkonfilesiantalya.webp" srcset="images/balkonfilesiantalya-480.webp 480w, images/balkonfilesiantalya-768.webp 768w, images/balkonfilesiantalya.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Balkon Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -236,13 +236,10 @@
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Çocuklarınız ve aileniz için yüksek katlı balkonlarda tam koruma sağlayan özel montajlı ağlar.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('balkon')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:bord border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('Balkon Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('balkon')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Balkon Güvenlik Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
                 <!-- Kart 2 -->
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg">
                         <img loading="lazy" decoding="async" src="images/kedibalkonfile.webp" srcset="images/kedibalkonfile-480.webp 480w, images/kedibalkonfile-768.webp 768w, images/kedibalkonfile.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Kedi Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -252,13 +249,10 @@
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Dostlarınızın pencere ve balkonlardan güvenle etrafı izlemesi için yırtılmaz, dayanıklı ipler.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('kedi')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('Kedi & Evcil Hayvan Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('kedi')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Kedi & Evcil Hayvan Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
                 <!-- Kart 3 -->
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg">
                             <img loading="lazy" decoding="async" src="images/insaatt.webp" srcset="images/insaatt-480.webp 480w, images/insaatt-768.webp 768w, images/insaatt.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="İnşaat Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -268,13 +262,10 @@
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Şantiyelerde iş güvenliği standartlarına uygun, düşmeyi önleyici ağır hizmet tipi ağlar.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('insaat')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('İnşaat Güvenlik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('insaat')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('İnşaat Güvenlik Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
                 <!-- Kart 4 -->
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg">
                             <img loading="lazy" decoding="async" src="images/kusfilesi.webp" srcset="images/kusfilesi-480.webp 480w, images/kusfilesi-768.webp 768w, images/kusfilesi.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Kuş Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -284,13 +275,10 @@
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Geniş alanların, fabrika çatılarının ve balkonların kuş istilasından korunması için ince gözenekli ağlar.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('kus')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('Kuş Engelleme Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('kus')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Kuş Engelleme Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
                 <!-- Kart 5 -->
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg">
                             <img loading="lazy" decoding="async" src="images/merdiven.webp" srcset="images/merdiven-480.webp 480w, images/merdiven-768.webp 768w, images/merdiven.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Okul & Merdiven" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -300,13 +288,10 @@
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Kolejler, devlet okulları ve anaokulları için merdiven boşluklarını kapatan emniyet sistemleri.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('okul')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('Okul & Merdiven Boşluğu Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('okul')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Okul & Merdiven Boşluğu Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
                 <!-- Kart 6 -->
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg">
                             <img loading="lazy" decoding="async" src="images/sahafilesi.webp" srcset="images/sahafilesi-480.webp 480w, images/sahafilesi-768.webp 768w, images/sahafilesi.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Spor Sahası" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -316,62 +301,59 @@
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Halı saha tavan ağları, kale arkası koruma fileleri ve tenis kortu çevreleme ağları.</p>
                         <p class="text-sm font-bold text-storm mt-2 dark:text-frost-blue"></p>
                     </div>
-                    <div class="flex flex-col gap-2 mt-3 sm:flex-row">
-                        <button onclick="showProductDetails('spor')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button>
-                        <button onclick="quickAdd('Spor & Halı Saha Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button>
-                    </div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('spor')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Spor & Halı Saha Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
             </div>
 
-            <div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="premium-product-grid mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <!-- Yeni ürünler -->
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/golgelikyeni.webp" srcset="images/golgelikyeni-480.webp 480w, images/golgelikyeni-768.webp 768w, images/golgelikyeni.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Gölgelik Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div>
                         <h3 class="text-2xl font-bold font-heading theme-text">Gölgelik Filesi</h3>
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Güneş ışığını azaltan, dış alanlarda konfor sağlayan dayanıklı gölgelik fileleri.</p>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('golgelik')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button><button onclick="quickAdd('Gölgelik Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button></div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('golgelik')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Gölgelik Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/hastane.webp" srcset="images/hastane-480.webp 480w, images/hastane-768.webp 768w, images/hastane.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Hastane Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div>
                         <h3 class="text-2xl font-bold font-heading theme-text">Hastane Filesi</h3>
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Hastane ve sağlık alanlarına uygun, hijyenik ve güvenli file çözümleri.</p>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('hastane')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button><button onclick="quickAdd('Hastane Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button></div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('hastane')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Hastane Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div>
                         <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/serra.webp" srcset="images/serra-480.webp 480w, images/serra-768.webp 768w, images/serra.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Sera Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div>
                         <h3 class="text-2xl font-bold font-heading theme-text">Sera Filesi</h3>
                         <p class="text-sm text-steel mt-2 dark:text-frost-blue">Sera alanlarında bitkileri korumaya ve hava akışını düzenlemeye yardımcı fileler.</p>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('sera')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button><button onclick="quickAdd('Sera Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button></div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('sera')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Sera Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/cimcit.webp" srcset="images/cimcit-480.webp 480w, images/cimcit-768.webp 768w, images/cimcit.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Çim Çit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading theme-text">Çim Çit</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Bahçe ve çevre düzenlemelerinde doğal görünüm sağlayan dayanıklı çim çit.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('cimcit')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button><button onclick="quickAdd('Çim Çit')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button></div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('cimcit')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Çim Çit', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/voleybol.webp" srcset="images/voleybol-480.webp 480w, images/voleybol-768.webp 768w, images/voleybol.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Voleybol Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading theme-text">Voleybol Filesi</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Voleybol sahaları için ölçülü, sağlam ve uzun ömürlü spor filesi.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('voleybol')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button><button onclick="quickAdd('Voleybol Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button></div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('voleybol')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Voleybol Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/kres.webp" srcset="images/kres-480.webp 480w, images/kres-768.webp 768w, images/kres.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Kreş Tırmanma Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading theme-text">Kreş Tırmanma Filesi</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Kreş ve oyun alanlarında güvenli tırmanma aktiviteleri için dayanıklı fileler.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('kres')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button><button onclick="quickAdd('Kreş Tırmanma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button></div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('kres')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Kreş Tırmanma Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
         <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/fabrika.webp" srcset="images/fabrika-480.webp 480w, images/fabrika-768.webp 768w, images/fabrika.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Fabrika Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading theme-text">Fabrika Filesi</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Fabrika ve endüstriyel tesislerde güvenlik ve alan ayırma için profesyonel fileler.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('fabrika')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button><button onclick="quickAdd('Fabrika Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button></div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('fabrika')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Fabrika Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/rafkoruma.webp" srcset="images/rafkoruma-480.webp 480w, images/rafkoruma-768.webp 768w, images/rafkoruma.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Raf Koruma Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading theme-text">Raf Koruma Filesi</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Depo ve raf sistemlerinde ürün düşmesini engelleyen, dayanıklı koruma fileleri.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('rafkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button><button onclick="quickAdd('Raf Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button></div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('rafkoruma')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Raf Koruma Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
-                <div class="rounded-3xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col justify-between dark:bg-dark-card dark:border-dark-border">
+                <div class="premium-card premium-product-card h-full rounded-2xl border border-steel/20 bg-white p-6 shadow-sm flex flex-col dark:bg-dark-card dark:border-dark-border">
                     <div><div class="w-full h-48 rounded-2xl mb-4 overflow-hidden relative group shadow-lg"><img loading="lazy" decoding="async" src="images/havuzkoruma.webp" srcset="images/havuzkoruma-480.webp 480w, images/havuzkoruma-768.webp 768w, images/havuzkoruma.webp 1200w"  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Havuz Koruma Filesi" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div><h3 class="text-2xl font-bold font-heading theme-text">Havuz Koruma Filesi</h3><p class="text-sm text-steel mt-2 dark:text-frost-blue">Havuz güvenliği için çocuk ve evcil hayvan koruması sağlayan dayanıklı fileler.</p></div>
-                    <div class="flex flex-col sm:flex-row gap-3 mt-6"><button onclick="showProductDetails('havuzkoruma')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border theme-text">Detayları İncele</button><button onclick="quickAdd('Havuz Koruma Filesi')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold theme-text hover:bg-storm transition">+</button></div>
+                    <div class="premium-product-actions"><button type="button" onclick="showProductDetails('havuzkoruma')" class="incele-link group">&#304;ncele<svg class="w-3 h-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button><button type="button" onclick="quickAdd('Havuz Koruma Filesi', true)" class="btn-primary-card">Teklif Al</button></div>
                 </div>
             </div>
         </section>
