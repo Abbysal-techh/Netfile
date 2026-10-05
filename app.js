@@ -264,7 +264,7 @@ const translations = {
     "© 2026 NETFİLE file & ağ sistemleri. Tüm Hakları Saklıdır.": "© 2026 NETFİLE file & network systems. All rights reserved.",
     "Kepez, Antalya": "Kepez, Antalya",
     "0 (532) 000 00 00": "+90 532 000 00 00",
-    "info@antalyafile.com": "info@antalyafile.com",
+    "netfile07@gmail.com": "netfile07@gmail.com",
     "15 yıllık tecrübemizle Antalya ve çevre illerde profesyonel file montaj hizmeti sunuyoruz.": "With 15 years of experience, we provide professional net installation services in Antalya and surrounding provinces.",
     Projelerimiz: "Our Projects",
     "Antalya ve çevre illerde gerçekleştirdiğimiz profesyonel file montaj projelerimizden örnekler.": "Examples of our professional net installation projects completed in Antalya and surrounding provinces.",
