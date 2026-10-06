@@ -17,58 +17,18 @@
     });
 
     document.querySelectorAll(
-        ".premium-site main button[onclick^='quickAdd'], " +
+        ".premium-site main button[onclick^='quickAdd']:not(.product-card-btn), " +
         ".premium-site #modal-add-to-cart"
     ).forEach(function (button) {
         button.classList.add("btn-secondary");
     });
 
     document.querySelectorAll(
-        ".premium-site main button[onclick^='showProductDetails'], " +
+        ".premium-site main button[onclick^='showProductDetails']:not(.product-card-btn), " +
         ".premium-site button[onclick='closeProductModal()'], " +
         ".premium-site a[href^='https://wa.me']"
     ).forEach(function (button) {
         button.classList.add("btn-ghost");
-    });
-
-    document.querySelectorAll(".premium-site main button[onclick^='quickAdd']").forEach(function (quickAdd) {
-        const card = quickAdd.closest(".premium-card");
-        const actions = quickAdd.parentElement;
-        if (!card || !actions) return;
-
-        card.classList.add("premium-product-card");
-        actions.classList.add("premium-product-actions");
-
-        const detailsButton = actions.querySelector("button[onclick^='showProductDetails']");
-        const productName = quickAdd.getAttribute("onclick")?.match(/quickAdd\('([^']+)'/)?.[1];
-        const productPages = {
-            "Balkon Güvenlik Filesi": "balkon-filesi.html",
-            "Kedi & Evcil Hayvan Filesi": "kedi-filesi.html",
-            "İnşaat Güvenlik Filesi": "insaat-filesi.html",
-            "Kuş Engelleme Filesi": "kus-filesi.html",
-            "Okul & Merdiven Boşluğu Filesi": "merdiven-boslugu-filesi.html"
-        };
-        const details = document.createElement("a");
-        details.href = productPages[productName] || "urunlerimiz.html";
-        details.className = "btn-ghost";
-        details.innerHTML = 'İncele <span aria-hidden="true">→</span>';
-        detailsButton?.replaceWith(details);
-
-        quickAdd.classList.add("premium-add-icon");
-        quickAdd.setAttribute("aria-label", "Ürünü teklife ekle");
-        quickAdd.setAttribute("title", "Ürünü teklife ekle");
-        quickAdd.innerHTML = '<span aria-hidden="true">+</span>';
-        card.appendChild(quickAdd);
-
-        let offer = actions.querySelector("a[data-premium-offer]");
-        if (!offer) {
-            offer = document.createElement("a");
-            offer.href = "teklif.html";
-            offer.dataset.premiumOffer = "true";
-            offer.textContent = "Teklif Al";
-            actions.appendChild(offer);
-        }
-        offer.classList.add("btn-primary");
     });
 
     document.querySelectorAll(".premium-site main > section.relative").forEach(function (section) {

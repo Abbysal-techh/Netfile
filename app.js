@@ -87,35 +87,9 @@ function initHomepageProducts() {
     if (!e || "true" === e.dataset.expanded) return;
         [ [ "kus", "Kuş Engelleme Filesi", "Geniş alanların, fabrika çatılarının ve balkonların kuş istilasından korunması için ince gözenekli ağlar.", "images/kusfilesi.webp" ], [ "spor", "Spor & Halı Saha Filesi", "Halı saha tavan ağları, kale arkası koruma fileleri ve tenis kortu çevreleme ağları.", "images/sahafilesi.webp" ], [ "okul", "Okul & Merdiven Boşluğu Filesi", "Kolejler, devlet okulları ve anaokulları için merdiven boşluklarını kapatan emniyet sistemleri.", "images/merdiven.webp" ], [ "golgelik", "Gölgelik Filesi", "Güneş ışığını azaltan, dış alanlarda konfor sağlayan dayanıklı gölgelik fileleri.", "images/golgelikyeni.webp" ], [ "hastane", "Hastane Filesi", "Hastane ve sağlık alanlarına uygun, hijyenik ve güvenli file çözümleri.", "images/hastane.webp" ], [ "sera", "Sera Filesi", "Sera alanlarında bitkileri korumaya ve hava akışını düzenlemeye yardımcı fileler.", "images/serra.webp" ], [ "cimcit", "Çim Çit", "Bahçe ve çevre düzenlemelerinde doğal görünüm sağlayan dayanıklı çim çit.", "images/cimcit.webp" ], [ "voleybol", "Voleybol Filesi", "Voleybol sahaları için ölçülü, sağlam ve uzun ömürlü spor filesi.", "images/voleybol.webp" ], [ "kres", "Kreş Tırmanma Filesi", "Kreş ve oyun alanlarında güvenli tırmanma aktiviteleri için dayanıklı fileler.", "images/kres.webp" ], [ "fabrika", "Fabrika Filesi", "Fabrika ve endüstriyel tesislerde güvenlik ve alan ayırma için profesyonel fileler.", "images/fabrika.webp" ] ].forEach(([t, a, n, i]) => {
         const l = document.createElement("div");
-            l.className = "premium-card premium-product-card rounded-2xl border border-steel/20 bg-white/60 p-6 shadow-sm dark:bg-dark-card dark:border-dark-border";
+            l.className = "premium-card rounded-3xl border border-steel/20 bg-white/60 p-6 flex flex-col justify-between shadow-sm dark:bg-dark-card dark:border-dark-border";
         const r = escapeHtml(a), o = escapeHtml(n), s = escapeHtml(i);
-        l.innerHTML = `\n            <div>\n                <div class="w-full h-44 rounded-2xl mb-4 overflow-hidden relative group">\n                    <img loading="lazy" decoding="async" src="${s}" srcset="${buildResponsiveSrcset(s)}" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="${r}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">\n                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>\n                </div>\n                <h3 class="text-2xl font-bold font-heading text-oxford-blue dark:text-moonlight">${r}</h3>\n                <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">${o}</p>\n            </div>\n            <div class="mobile-action-group flex flex-nowrap gap-2 mt-3 sm:flex-row">\n                <button onclick="showProductDetails('${t}')" class="flex-1 rounded-full border border-steel/30 bg-white/50 py-2.5 text-sm font-semibold text-oxford-blue hover:bg-white transition dark:bg-dark-card dark:border-dark-border dark:text-moonlight">Detayları İncele</button>\n                <button onclick="quickAdd('${r}')" class="flex-1 rounded-full bg-steel py-2.5 text-sm font-semibold text-moonlight hover:bg-storm transition">+</button>\n            </div>\n        `,
-        (() => {
-        const actions = l.querySelector(".mobile-action-group");
-        const detailsButton = actions?.querySelector("button[onclick^='showProductDetails']");
-        const quickAdd = actions?.querySelector("button[onclick^='quickAdd']");
-        if (actions && detailsButton && quickAdd) {
-            actions.className = "premium-product-actions";
-            const productPages = { kus: "kus-filesi.html", okul: "merdiven-boslugu-filesi.html" };
-            const details = document.createElement("a");
-            details.href = productPages[t] || "urunlerimiz.html";
-            details.className = "btn-ghost";
-            details.innerHTML = 'İncele <span aria-hidden="true">→</span>';
-
-            const offer = document.createElement("a");
-            offer.href = "teklif.html";
-            offer.className = "btn-primary";
-            offer.textContent = "Teklif Al";
-            actions.replaceChildren(details, offer);
-
-            quickAdd.className = "premium-add-icon";
-            quickAdd.type = "button";
-            quickAdd.setAttribute("aria-label", "Ürünü teklife ekle");
-            quickAdd.title = "Ürünü teklife ekle";
-            quickAdd.innerHTML = '<span aria-hidden="true">+</span>';
-            l.appendChild(quickAdd);
-        }
-        })(),
+        l.innerHTML = `\n            <div>\n                <div class="w-full h-44 rounded-2xl mb-4 overflow-hidden relative group">\n                    <img loading="lazy" decoding="async" src="${s}" srcset="${buildResponsiveSrcset(s)}" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="${r}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">\n                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>\n                </div>\n                <h3 class="text-2xl font-bold font-heading text-oxford-blue dark:text-moonlight">${r}</h3>\n                <p class="text-sm text-steel/90 mt-2 dark:text-frost-blue/90">${o}</p>\n            </div>\n            <div class="flex flex-col gap-2 mt-3 sm:flex-row"><button onclick="showProductDetails('${t}')" class="product-card-btn product-card-btn-secondary">Detayları İncele</button><button onclick="quickAdd('${r}')" class="product-card-btn product-card-btn-primary">Teklif Listesine Ekle</button></div>\n        `,
         e.appendChild(l);
     }), e.dataset.expanded = "true", translatableLeafNodesCache = null;
 }
