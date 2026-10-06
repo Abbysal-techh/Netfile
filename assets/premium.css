@@ -671,6 +671,29 @@
     transform: translateY(-1px);
 }
 
+.premium-site main a.product-card-btn.product-card-btn-whatsapp {
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 8px;
+    border: 0;
+    background: #25d366;
+    color: #ffffff !important;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.premium-site main a.product-card-btn.product-card-btn-whatsapp:hover {
+    background: #20bd5a;
+    color: #ffffff !important;
+    filter: none;
+    transform: translateY(-1px);
+}
+
 @media (max-width: 640px) {
     .premium-site main .product-card-btn {
         width: 100%;

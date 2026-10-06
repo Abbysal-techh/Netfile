@@ -26,7 +26,7 @@
     document.querySelectorAll(
         ".premium-site main button[onclick^='showProductDetails']:not(.product-card-btn), " +
         ".premium-site button[onclick='closeProductModal()'], " +
-        ".premium-site a[href^='https://wa.me']"
+        ".premium-site a[href^='https://wa.me']:not(.product-card-btn)"
     ).forEach(function (button) {
         button.classList.add("btn-ghost");
     });
