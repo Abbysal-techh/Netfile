@@ -391,6 +391,9 @@
     --accent: #f0ecdd;
     --accent-bright: #ffffff;
     --accent-dim: #d8d4c5;
+    --accent-gold: #c4a97a;
+    --accent-gold-light: #d9c49a;
+    --accent-gold-dark: #a8895a;
 }
 
 .premium-site,
@@ -748,4 +751,82 @@
     .premium-site main > section.premium-hero .relative.z-10 p:last-of-type {
         font-size: 1.25rem;
     }
+}
+
+.premium-site main p.uppercase[class*="tracking"] {
+    color: rgba(196, 169, 122, 0.8) !important;
+}
+
+.premium-site main > section:first-child .relative.z-10 p.uppercase[class*="tracking"] {
+    color: var(--text-body) !important;
+}
+
+.premium-site .home-section-title,
+.premium-site .delivery-title,
+.premium-site .heading-accent-underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.premium-site .home-section-title::after,
+.premium-site .delivery-title::after,
+.premium-site .heading-accent-underline::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(196, 169, 122, 0.6) 50%, transparent);
+    content: "";
+}
+
+.premium-site .section-divider {
+    position: relative;
+    border-top: 0 !important;
+}
+
+.premium-site .section-divider::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(196, 169, 122, 0.25) 50%, transparent);
+    content: "";
+}
+
+.premium-site .stat-number {
+    background: linear-gradient(135deg, #ffffff 0%, var(--accent-gold) 100%);
+    background-clip: text;
+    color: transparent !important;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.premium-site .category-tag {
+    color: var(--accent-gold);
+}
+
+.premium-site main div.product-card.rounded-3xl.border:hover,
+.dark .premium-site main div.product-card.rounded-3xl.border:hover {
+    transform: translateY(-4px) !important;
+    border-color: rgba(196, 169, 122, 0.3) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(196, 169, 122, 0.15) !important;
+}
+
+.premium-site main button.product-card-btn.product-card-btn-secondary:hover {
+    border-color: rgba(196, 169, 122, 0.4);
+    background: rgba(196, 169, 122, 0.05);
+    color: var(--accent-gold) !important;
+}
+
+.premium-site main button.product-card-btn.product-card-btn-primary:hover {
+    box-shadow: 0 0 0 1px rgba(196, 169, 122, 0.4), 0 6px 20px rgba(196, 169, 122, 0.3);
+}
+
+.premium-site main a:not([href^="https://wa.me"]):hover,
+.premium-site footer a:hover {
+    color: var(--accent-gold) !important;
 }
