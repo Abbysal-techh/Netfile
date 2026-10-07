@@ -314,6 +314,11 @@
     padding-bottom: 5rem;
 }
 
+.premium-site main > section.homepage-products-section {
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
+
 .premium-site main [class~="py-12"]:not(.premium-hero) {
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
@@ -329,7 +334,7 @@
 
 .premium-site #homepage-products {
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 0;
 }
 
 .premium-site main > section h1,
@@ -473,11 +478,15 @@
 }
 
 .premium-site .home-section-title {
-    color: var(--text-h1) !important;
+    color: #ffffff !important;
 }
 
 .premium-site .delivery-title {
     color: var(--accent) !important;
+}
+
+.premium-site main p.product-section-description {
+    color: #8a9bb8 !important;
 }
 
 .premium-site .premium-card:has(.product-card-btn) h3 {
